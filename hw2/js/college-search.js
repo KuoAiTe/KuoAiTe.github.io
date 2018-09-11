@@ -65,8 +65,8 @@ jQuery.each( data, function( i, val ) {
                     <p class="card-text mb-auto padding-top-10">`+introduction+`</p>
                 </div>
                 <div class="col-md-3 text-center" style="padding-top:15px;">
-                    <a href="#" class="btn btn-outline-danger btn-lg width100">Save School</a><p></p>
-                    <a href="#" class="btn btn-outline-primary btn-lg width100">View School</a>
+                    <a href="#" class="btn btn-outline-danger btn-lg width100">Favorite</a><p></p>
+                    <a href="#" class="btn btn-outline-primary btn-lg width100">View</a>
                 </div>
             </div>
         </div>
