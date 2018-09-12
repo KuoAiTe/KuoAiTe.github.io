@@ -1,5 +1,4 @@
 jQuery.each( scholarships, function( i, val ) {
-    console.log("first valueasd:"+ val["title"]);
     var title = val["title"];
     var amount = val["amount"];
     var available = val["available"];

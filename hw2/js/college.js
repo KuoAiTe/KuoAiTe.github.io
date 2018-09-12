@@ -29,3 +29,6 @@ jQuery.each( data, function( i, val ) {
     $("#college_container").append(write_msg);
     $("p.card-text").css('min-height','120px');
 });
+$( "#college-serach-button" ).click(function() {
+  window.location.href= 'college-search-result.html#'+$('#college-search-text').val();
+});
