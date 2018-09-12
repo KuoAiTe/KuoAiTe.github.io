@@ -22,5 +22,5 @@ jQuery.each( data, function( i, val ) {
             </div>
         </div>
     </div>`;
-    $('#college-search-result').append(write_msg);
+    $('div#college-search-result').append(write_msg);
 });

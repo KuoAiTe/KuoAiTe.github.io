@@ -12,43 +12,42 @@
         <link href="./css/custom.css" rel="stylesheet">
     </head>
     <body>
-        <div id="title-container" class="container">
-            <section id="college-search" class="jumbotron text-center">
-                <div class="container">
-                    <div class="col-md-9" style="margin:auto;">
-                        <h1 class="jumbotron-heading">Find a college that fits you!</h1>
-                        <p class="lead text-muted">Search by school name, location, and other keywords</p>
-                        <div class="input-group">
-                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                            <div class="input-group-append">
-                                <button class="btn btn-light dropdown-toggle" style="border-color: #ced4da;border-radius:0; border-right-style:none;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All states</button>
-                                <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div role="separator" class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                                <a href="college-search-result.html">
-                                    <button type="button" class="btn btn-light" style="border-color: #ced4da;" >Search</button>
-                                </a>
+        <section id="college-search" class="jumbotron text-center" style="position:relative;">
+            <div class="banner-mask"></div>
+            <div class="container">
+                <div class="col-md-9" style="margin:auto;">
+                    <h1 class="jumbotron-heading text-light">Find a college that fits you!</h1>
+                    <p class="lead text-light">Search by school name, location, and other keywords</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                        <div class="input-group-append">
+                            <button class="btn btn-light dropdown-toggle" style="border-color: #ced4da;border-radius:0; border-right-style:none;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All states</button>
+                            <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
                             </div>
+                            <a href="college-search-result.html">
+                                <button type="button" class="btn btn-light" style="border-color: #ced4da;" >Search</button>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <main role="main">
-                <div class="album py-5 bg-light">
-                    <div class="container">
-                        <h2 class="college_container-title">College Around you</h2>
-                        <div id="college_container" class="row"></div>
-                    </div>
+            </div>
+        </section>
+        <main role="main">
+            <div class="album bg-light">
+                <div class="container">
+                    <h2 class="mb-4">College Around you</h2>
+                    <div id="college_container" class="row"></div>
                 </div>
-            </main>
-            <footer class="text-muted">
+            </div>
+        </main>
+        <footer class="text-muted">
 
-            </footer>
-        </div>
+        </footer>
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/jquery-3.3.1.slim.min.js"></script>
         <script src="./js/header.js"></script>

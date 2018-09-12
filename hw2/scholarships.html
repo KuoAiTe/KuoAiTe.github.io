@@ -13,52 +13,42 @@
     </head>
 
     <body>
-        <div id="title-container" class="container">
-            <section id="scholarships-search" class="jumbotron text-center">
-                <div class="container">
-                    <div class="col-md-9" style="margin:auto;">
-                        <h1 class="jumbotron-heading">Scholarships Mathcher</h1>
-                        <p class="lead text-muted">Search by school name, location, and other keywords</p>
-                        <div class="input-group">
-                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                            <div class="input-group-append">
-                                <button class="btn btn-light dropdown-toggle" style="border-color: #ced4da;border-radius:0; border-right-style:none;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All states</button>
-                                <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div role="separator" class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
-                                </div>
-                                <a href="scholarships-search-result.html">
-                                    <button type="button" class="btn btn-light" style="border-color: #ced4da;" >Search</button>
-                                </a>
+        <section id="scholarships-search" class="jumbotron text-center">
+            <div class="container">
+                <div class="banner-mask-1"></div>
+                <div class="col-md-9" style="margin:auto;">
+                    <h1 class="jumbotron-heading">Scholarships Mathcher</h1>
+                    <p class="lead text-muted">Search by school name, location, and other keywords</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                        <div class="input-group-append">
+                            <button class="btn btn-light dropdown-toggle" style="border-color: #ced4da;border-radius:0; border-right-style:none;" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All states</button>
+                            <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <h3 class="pb-3 mb-4 font-italic border-bottom">Recommended Scholarships</h3>
-            <div class="row mb-2">
-                <div class="col-md-4">
-                    <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-                        <div class="card-body d-flex flex-column align-items-start">
-                            <h3 class="mb-0">
-                            <a class="text-dark" href="#">$1,000 You Deserve It Scholarship</a>
-                            </h3>
-                            <div class="mb-1 text-muted">~ Nov 12</div>
-                            <p class="card-text mb-auto">Amount: $1000</p>
-                            <a href="#">Continue reading</a>
+                            <a href="scholarships-search-result.html">
+                                <button type="button" class="btn btn-light" style="border-color: #ced4da;" >Search</button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer class="text-muted">
-
-            </footer>
+        </section>
+        <div class="container">
+            <h3 class="pb-3 mb-4 font-italic border-bottom">Recommended Scholarships</h3>
+            <div  id="scholarships-container" class="row mb-2">
         </div>
+        <footer class="text-muted">
+
+        </footer>
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/jquery-3.3.1.slim.min.js"></script>
         <script src="./js/header.js"></script>
+        <script src="./js/data.js"></script>
+        <script src="./js/scholarships.js"></script>
     </body>
 </html>
