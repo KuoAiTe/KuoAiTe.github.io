@@ -110,9 +110,14 @@ img.card-img-top{
   flex: 0 0 auto;
 }
 
-.h-250 { height: 180px; }
+.h-180 { height: 180px; }
 @media (min-width: 768px) {
-  .h-md-250 { height: 180px; }
+  .h-md-180 { height: 180px; }
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
 }
 /*
  * Blog name and description

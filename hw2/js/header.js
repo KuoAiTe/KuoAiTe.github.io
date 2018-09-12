@@ -6,7 +6,7 @@ var d = `
       <a class="text-muted" href="#">Subscribe</a>
     </div>
     <div class="col-4 text-center">
-      <a class="blog-header-logo text-dark" href="index.html">Scholarships</a>
+      <a class="blog-header-logo text-dark" href="index.html">HW</a>
     </div>
     <div class="col-4 d-flex justify-content-end align-items-center">
       <a class="text-muted" href="#">
@@ -21,8 +21,8 @@ var d = `
   <nav class="nav d-flex justify-content-between">
     <a class="p-2 text-muted" href="college.html">Schools</a>
     <a class="p-2 text-muted" href="scholarships.html">Scholarships</a>
-    <a class="p-2 text-muted" href="finacialaid.html">Finacial Aid</a>
-    <a class="p-2 text-muted" href="studentloans.html">Resources</a>
+    <a class="p-2 text-muted" href="404.html">Finacial Aid</a>
+    <a class="p-2 text-muted" href="404.html">Resources</a>
   </nav>
 </div>`;
 
