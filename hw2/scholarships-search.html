@@ -18,17 +18,9 @@
         <div id="title-container" class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-4 mb-3">
-                          <label for="state">Citizenship</label>
-                          <select class="custom-select d-block w-100" id="state" required="">
-                              <option value="">Choose...</option>
-                              <option>U.S.</option>
-                              <option>Permanent Resident</option>
-                              <option>International</option>
-                          </select>
-                        </div>
-                        <div class="col-md-4 mb-3">
+                    <h3 class="pb-3 mb-4 font-italic border-bottom">Personal Information</h3>
+                    <div class="row mb-4">
+                        <div class="col-md-3 mb-3">
                           <label for="state">Gender</label>
                           <select class="custom-select d-block w-100" id="state" required="">
                               <option value="">Choose...</option>
@@ -37,39 +29,14 @@
                               <option>Custom</option>
                           </select>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-3 mb-3">
-                            <label for="state">Current grade level</label>
-                            <select class="custom-select d-block w-100" id="state" required="">
+                          <label for="state">Citizenship</label>
+                          <select class="custom-select d-block w-100" id="state" required="">
                               <option value="">Choose...</option>
-                              <option>High School Freshman</option>
-                              <option>High School Sophomore</option>
-                              <option>High School Junior</option>
-                              <option>High School Senior</option>
-                              <option>College Freshman</option>
-                              <option>College Sophomore</option>
-                              <option>College Junior</option>
-                              <option>College Senior</option>
-                              <option>Graduate</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                            <label for="state">Major:</label>
-                            <input type="text" class="form-control" placeholder="" value="" required="">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 mb-3">
-                            <label for="state">Scholarships for:</label>
-                            <select class="custom-select d-block w-100" id="state" required="">
-                              <option value="">Choose...</option>
-                              <option>College Freshman</option>
-                              <option>College Sophomore</option>
-                              <option>College Junior</option>
-                              <option>College Senior</option>
-                              <option>Graduate</option>
-                            </select>
+                              <option>U.S.</option>
+                              <option>Permanent Resident</option>
+                              <option>International</option>
+                          </select>
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="state">State</label>
@@ -129,7 +96,64 @@
                             </select>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mb-4">
+                        <div class="col-md-3 mb-3">
+                            <label for="state">Race</label>
+                            <select class="custom-select d-block w-100" id="state" required="">
+                                <option value="">Choose...</option>
+                                <option>African American</option>
+                                <option>Hispanic</option>
+                                <option>Asia/Pacific Islander</option>
+                                <option>Native American</option>
+                                <option>Alasaka Native</option>
+                                <option>Caucasian</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="state">Athletic Interests</label>
+                            <select class="custom-select d-block w-100" id="state" required="">
+                                <option value="">Choose...</option>
+                                <option>Archery</option>
+                                <option>Baseball</option>
+                                <option>Basketball</option>
+                                <option>Billiards</option>
+                                <option>Bodybuilding</option>
+                                <option>Bowling</option>
+                                <option>Boxing</option>
+                                <option>Cheerleading</option>
+                                <option>Equestrian</option>
+                                <option>Esports</option>
+                                <option>Fencing</option>
+                                <option>Field Hockey</option>
+                                <option>Figure Skating</option>
+                                <option>Football</option>
+                                <option>Golf</option>
+                                <option>Gymnastics</option>
+                                <option>Ice Hockey</option>
+                                <option>In-line Skating</option>
+                                <option>Marksmanship</option>
+                                <option>Martial Arts</option>
+                                <option>Rugby</option>
+                            </select>
+                        </div>
+                    </div>
+                    <h3 class="pb-3 mb-4 font-italic border-bottom">Academic Information</h3>
+                    <div class="row mb-4">
+                        <div class="col-md-3 mb-3">
+                            <label for="state">Current Grade Level</label>
+                            <select class="custom-select d-block w-100" id="state" required="">
+                              <option value="">Choose...</option>
+                              <option>High School Freshman</option>
+                              <option>High School Sophomore</option>
+                              <option>High School Junior</option>
+                              <option>High School Senior</option>
+                              <option>College Freshman</option>
+                              <option>College Sophomore</option>
+                              <option>College Junior</option>
+                              <option>College Senior</option>
+                              <option>Graduate</option>
+                            </select>
+                        </div>
                         <div class="col-md-3 mb-3">
                           <label for="state">GPA</label>
                           <select class="custom-select d-block w-100" id="state" required="">
@@ -186,10 +210,37 @@
                           </select>
                         </div>
                     </div>
+
+                    <h3 class="pb-3 mb-4 font-italic border-bottom">Scholarship Information</h3>
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="state">Scholarships for:</label>
+                            <select class="custom-select d-block w-100" id="state" required="">
+                              <option value="">Choose...</option>
+                              <option>College Freshman</option>
+                              <option>College Sophomore</option>
+                              <option>College Junior</option>
+                              <option>College Senior</option>
+                              <option>Graduate</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-4 mb-3">
+                            <label for="state">Major</label>
+                            <select multiple class="form-control"><option value="<None Selected>">&lt;None Selected&gt;</option><option value="Accounting">Accounting</option><option value="Advertising">Advertising</option><option value="Aerospace">Aerospace</option><option value="Agribusiness">Agribusiness</option><option value="Agricultural economics">Agricultural economics</option><option value="Agricultural education">Agricultural education</option><option value="Agriculture">Agriculture</option><option value="Air conditioning/heating/refrigeration technology">Air conditioning/heating/refrigeration technology</option><option value="Ancient near eastern studies">Ancient near eastern studies</option><option value="Animal sciences">Animal sciences</option><option value="Anthropology">Anthropology</option><option value="Archaeology">Archaeology</option><option value="Architecture">Architecture</option><option value="Art/art history">Art/art history</option><option value="Arts management">Arts management</option><option value="Arts, general">Arts, general</option><option value="Asian studies">Asian studies</option><option value="Astronomy">Astronomy</option><option value="Athletic training">Athletic training</option><option value="Atmospheric sciences/meteorology">Atmospheric sciences/meteorology</option><option value="Automotive technology">Automotive technology</option><option value="Aviation">Aviation</option><option value="Aviation repair">Aviation repair</option><option value="Biochemistry">Biochemistry</option><option value="Bioengineering">Bioengineering</option><option value="Biology">Biology</option><option value="Biomedical">Biomedical</option><option value="Botany">Botany</option><option value="Business">Business</option><option value="Business, international">Business, international</option><option value="Business/management/administration">Business/management/administration</option><option value="Cartography">Cartography</option><option value="Chemistry">Chemistry</option><option value="Chiropractic">Chiropractic</option><option value="Classics">Classics</option><option value="Communications">Communications</option><option value="Computer graphics">Computer graphics</option><option value="Computer/information sciences">Computer/information sciences</option><option value="Construction">Construction</option><option value="Construction management">Construction management</option><option value="Cosmetology/hairdressing">Cosmetology/hairdressing</option><option value="Criminal justice/law enforcement">Criminal justice/law enforcement</option><option value="Culinary arts">Culinary arts</option><option value="Dairy">Dairy</option><option value="Deafness studies">Deafness studies</option><option value="Dental assistant">Dental assistant</option><option value="Dental hygiene">Dental hygiene</option><option value="Dental laboratory technology">Dental laboratory technology</option><option value="Dentistry">Dentistry</option><option value="Design">Design</option><option value="Dietetics/nutrition">Dietetics/nutrition</option><option value="Dressage">Dressage</option><option value="Ecology">Ecology</option><option value="Economics">Economics</option><option value="Education">Education</option><option value="Education, early childhood">Education, early childhood</option><option value="Education, special">Education, special</option><option value="Education, teacher">Education, teacher</option><option value="Electronics">Electronics</option><option value="Energy research">Energy research</option><option value="Engineering">Engineering</option><option value="Engineering, agricultural">Engineering, agricultural</option><option value="Engineering, biomedical">Engineering, biomedical</option><option value="Engineering, ceramic">Engineering, ceramic</option><option value="Engineering, chemical">Engineering, chemical</option><option value="Engineering, civil">Engineering, civil</option><option value="Engineering, computer">Engineering, computer</option><option value="Engineering, construction">Engineering, construction</option><option value="Engineering, electrical/electronic">Engineering, electrical/electronic</option><option value="Engineering, environmental">Engineering, environmental</option><option value="Engineering, industrial">Engineering, industrial</option><option value="Engineering, marine">Engineering, marine</option><option value="Engineering, materials">Engineering, materials</option><option value="Engineering, mechanical">Engineering, mechanical</option><option value="Engineering, mining">Engineering, mining</option><option value="Engineering, nuclear">Engineering, nuclear</option><option value="Engineering, petroleum">Engineering, petroleum</option><option value="Engineering, structural">Engineering, structural</option><option value="English">English</option><option value="English literature">English literature</option><option value="Entomology">Entomology</option><option value="Environmental science">Environmental science</option><option value="Epidemiology">Epidemiology</option><option value="Equestrian/equine studies">Equestrian/equine studies</option><option value="Ethnic/cultural studies">Ethnic/cultural studies</option><option value="Fashion/fashion design/modeling">Fashion/fashion design/modeling</option><option value="Film/video">Film/video</option><option value="Finance/banking">Finance/banking</option><option value="Fire science/technology">Fire science/technology</option><option value="Food production/management/services">Food production/management/services</option><option value="Food science/technology">Food science/technology</option><option value="Foreign languages">Foreign languages</option><option value="Forensics">Forensics</option><option value="Forestry">Forestry</option><option value="Geography">Geography</option><option value="Geology/earth sciences">Geology/earth sciences</option><option value="Geophysics">Geophysics</option><option value="Gerontology">Gerontology</option><option value="Governmental public relations">Governmental public relations</option><option value="Graphic arts/design">Graphic arts/design</option><option value="Hawaiian studies">Hawaiian studies</option><option value="Health education">Health education</option><option value="Health sciences">Health sciences</option><option value="Health services administration">Health services administration</option><option value="Health-related professions">Health-related professions</option><option value="History">History</option><option value="Horticulture">Horticulture</option><option value="Hospitality administration/management">Hospitality administration/management</option><option value="Hotel/restaurant management">Hotel/restaurant management</option><option value="Human resources">Human resources</option><option value="Humanities/liberal arts">Humanities/liberal arts</option><option value="Hydrology">Hydrology</option><option value="Information systems">Information systems</option><option value="Insurance/actuarial science">Insurance/actuarial science</option><option value="Interior design">Interior design</option><option value="International relations">International relations</option><option value="International studies">International studies</option><option value="Italian">Italian</option><option value="Italian-american studies">Italian-american studies</option><option value="Journalism">Journalism</option><option value="Landscape architecture">Landscape architecture</option><option value="Latin american studies">Latin american studies</option><option value="Law">Law</option><option value="Library science">Library science</option><option value="Life sciences">Life sciences</option><option value="Linguistics">Linguistics</option><option value="Literature">Literature</option><option value="Manufacturing">Manufacturing</option><option value="Marketing">Marketing</option><option value="Materials science">Materials science</option><option value="Mathematics">Mathematics</option><option value="Medical assistant">Medical assistant</option><option value="Medical emergency">Medical emergency</option><option value="Medical specialties/research">Medical specialties/research</option><option value="Medicine">Medicine</option><option value="Mental health/therapy">Mental health/therapy</option><option value="Meteorology">Meteorology</option><option value="Microbiology">Microbiology</option><option value="Middle eastern studies">Middle eastern studies</option><option value="Midwifery">Midwifery</option><option value="Military science">Military science</option><option value="Ministry">Ministry</option><option value="Mortuary science">Mortuary science</option><option value="Multicultural studies">Multicultural studies</option><option value="Museum studies">Museum studies</option><option value="Museum studies/administration">Museum studies/administration</option><option value="Music">Music</option><option value="Music management">Music management</option><option value="Native american studies">Native american studies</option><option value="Natural resources/conservation">Natural resources/conservation</option><option value="Natural sciences">Natural sciences</option><option value="Neurology">Neurology</option><option value="Neuroscience">Neuroscience</option><option value="Nonprofit administration">Nonprofit administration</option><option value="Nuclear medicine">Nuclear medicine</option><option value="Nuclear science">Nuclear science</option><option value="Nurse practitioner">Nurse practitioner</option><option value="Nursing">Nursing</option><option value="Occupational therapy">Occupational therapy</option><option value="Oceanography/marine studies">Oceanography/marine studies</option><option value="Oncology">Oncology</option><option value="Optometry/ophthalmology">Optometry/ophthalmology</option><option value="Ornithology">Ornithology</option><option value="Orthotics/prosthetics">Orthotics/prosthetics</option><option value="Parks/recreation">Parks/recreation</option><option value="Peace studies">Peace studies</option><option value="Pediatric nurse practitioner">Pediatric nurse practitioner</option><option value="Performing arts">Performing arts</option><option value="Pharmacy/pharmaceutics/pharmacology">Pharmacy/pharmaceutics/pharmacology</option><option value="Philanthropy">Philanthropy</option><option value="Philosophy">Philosophy</option><option value="Physical education">Physical education</option><option value="Physical sciences">Physical sciences</option><option value="Physical therapy">Physical therapy</option><option value="Physician assistant">Physician assistant</option><option value="Physics">Physics</option><option value="Playwriting/screen writing">Playwriting/screen writing</option><option value="Polish language/studies">Polish language/studies</option><option value="Political science/government">Political science/government</option><option value="Printing">Printing</option><option value="Psychology">Psychology</option><option value="Public administration/service">Public administration/service</option><option value="Public health">Public health</option><option value="Public relations">Public relations</option><option value="Publishing">Publishing</option><option value="Radio/television/film">Radio/television/film</option><option value="Range science">Range science</option><option value="Real estate">Real estate</option><option value="Recording arts">Recording arts</option><option value="Rehabilitation/therapeutic services">Rehabilitation/therapeutic services</option><option value="Religion/theology">Religion/theology</option><option value="Respiratory therapy">Respiratory therapy</option><option value="Retailing/merchandising">Retailing/merchandising</option><option value="Robotics">Robotics</option><option value="Scandinavian studies/research">Scandinavian studies/research</option><option value="Science, general">Science, general</option><option value="Social work">Social work</option><option value="Social/behavioral sciences">Social/behavioral sciences</option><option value="Sociology">Sociology</option><option value="Speech pathology/audiology">Speech pathology/audiology</option><option value="Sports/sports administration">Sports/sports administration</option><option value="Surgical technology">Surgical technology</option><option value="Surveying/mapping">Surveying/mapping</option><option value="Theater arts">Theater arts</option><option value="Theater/production/technical">Theater/production/technical</option><option value="Tourism/travel">Tourism/travel</option><option value="Transportation">Transportation</option><option value="Turf management">Turf management</option><option value="Urban planning">Urban planning</option><option value="Veterinary medicine">Veterinary medicine</option><option value="Welding">Welding</option><option value="Wildlife/fisheries">Wildlife/fisheries</option><option value="Women's studies">Women's studies</option><option value="Zoology">Zoology</option></select>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="firstName">Sports</label>
                             <input type="text" class="form-control" placeholder="" value="" required="">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-lg btn-primary">Search</button>
                         </div>
                     </div>
                 </div>

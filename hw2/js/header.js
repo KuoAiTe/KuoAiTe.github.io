@@ -18,7 +18,7 @@ var d = `
 <div class="nav-scroller row">
     <div class="py-1 mb-2 col-md-6" style="margin:auto;">
       <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-light" href="college.html">Schools</a>
+        <a class="p-2 text-light" href="college.html">College</a>
         <a class="p-2 text-light" href="scholarships.html">Scholarships</a>
         <a class="p-2 text-light" href="404.html">Finacial Aid</a>
         <a class="p-2 text-light" href="404.html">Resources</a>
