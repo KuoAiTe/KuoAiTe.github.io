@@ -86,7 +86,7 @@ var data = [
 var scholarships = [
     {
         title:"$1,000 You Deserve It Scholarship",
-        amount:"$1000",
+        amount:"$1,000",
         deadline:"Sep 04, 2018",
         available:999,
         GPA:"> 3.0",
@@ -98,6 +98,27 @@ var scholarships = [
         available:1,
         GPA:"None",
         content:"The Humane Education Network in partnership with the Animal Welfare Institute is pleased to announce its 27th Annual A Voice for Animals High School Contest. Participants must currently be attending middle or high school, or be home-schooled and under 19 years of age on the date the contest opens for entries. The contest is open to all otherwise eligible students worldwide regardless of nationality, citizenship or country of residence. For more information or to apply, please visit the scholarship provider's website."
+    },{
+        title:"AWMF & Ford Emerging Voices Scholarship",
+        amount:"$2,000",
+        deadline:"May 01, 2019",
+        available:1,
+        GPA:"None",
+        content:"The AWM Foundation's partnership with the Ford Motor Company Fund supports two female students based on an essay written on a suggested topic. Winning applicants will receive a scholarship of $2,000 each and get the opportunity to write four blog posts for AWM. Winners are invited to accept their scholarships live at the Gracies Luncheon in New York City."
+    },{
+        title:"BSU Letterman Telecommunications Scholarship",
+        amount:"$10,000",
+        deadline:"Apr 04, 2019",
+        available:3,
+        GPA:"None",
+        content:"The Letterman Telecommunications Scholarships were established effective with the 1985-1986 school year by David M. Letterman, a 1970 Radio-Television graduate of Ball State. Mr. Letterman's intention is to continue these scholarships indefinitely. In 1987, he guaranteed that intention by depositing $90,000 in the Ball State Foundation for scholarships. The purpose is to provide financial assistance to Ball State majors and minors in telecommunications."
+    },{
+        title:"Davidson Fellows Scholarship",
+        amount:"$50,000",
+        deadline:"Feb 14, 2019",
+        available:3,
+        GPA:">3.5",
+        content:"The Davidson Fellows Scholarship awards prestigious scholarships to extraordinary young people, 18 and under, who have completed a significant piece of work. Application categories are science, technology, engineering, mathematics, literature, music, philosophy and outside the box. Davidson Fellows are honored every year in Washington, D.C. with Congressional meetings and a special reception. For more information or to apply, please visit the scholarship provider's website."
     }
 
 ];

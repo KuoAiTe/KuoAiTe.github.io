@@ -1,6 +1,7 @@
 jQuery.each( scholarships, function( i, val ) {
     console.log("first valueasd:"+ val["title"]);
     var title = val["title"];
+    var amount = val["amount"];
     var available = val["available"];
     var deadline = val["deadline"];
     var GPA = val["GPA"];
@@ -17,7 +18,7 @@ jQuery.each( scholarships, function( i, val ) {
                     <div class="row text-center mt-2 mb-2 width100">
                         <div class="col-lg-4">
                         <h5>Amount</h5>
-                        <h2>$33305</h2>
+                        <h2>`+amount+`</h2>
                         </div>
                         <div class="col-lg-4">
                         <h5>Available</h5>
