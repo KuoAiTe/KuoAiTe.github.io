@@ -2,7 +2,8 @@
 var lat = 0;
 var lng = 0;
 $( document ).ready(function() {
-    var requested_name = location.hash.substr(1);
+    var requested_name = location.hash.substr(1).replace(/%20/g, " ");
+    console.log(requested_name);
     for(var i=0; i < data.length;i++){
         if(data[i]["name"] == requested_name){
             var val = data[i];

@@ -15,12 +15,12 @@ jQuery.each( scholarships, function( i, val ) {
                     </h4>
                     <p>`+content+`</p>
                     <div class="row width100 mt-2 mb-2">
-                        <small class="col-md-4 scholarships-info">Awards<h5>`+amount+`</h5></small>
-                        <small class="col-md-4 scholarships-info">Available<h5>`+available+`</h5></small>
-                        <small class="col-md-4 scholarships-info">GPA<h5>`+GPA+`</h5></small>
+                        <small class="col-4 col-sm-4 col-md-4 scholarships-info">Awards<h6>`+amount+`</h6></small>
+                        <small class="col-4 col-sm-4 col-md-4 scholarships-info">Available<h6>`+available+`</h6></small>
+                        <small class="col-4 col-sm-4 col-md-4 scholarships-info">GPA<h6>`+GPA+`</h6></small>
                     </div>
                     <div class="d-flex justify-content-between align-items-center width100">
-                                            <h5 class="mb-1 text-danger">Deadline: `+deadline+`</h5>
+                        <h6 class="mb-1 text-danger">Deadline: `+deadline+`</h6>
                         <div class="btn-group">
                             <a href="#">
                                 <button type="button" class="btn btn-sm btn-danger">Apply</button>

@@ -106,7 +106,7 @@ var scholarships = [
         GPA:"None",
         content:"The AWM Foundation's partnership with the Ford Motor Company Fund supports two female students based on an essay written on a suggested topic. Winning applicants will receive a scholarship of $2,000 each and get the opportunity to write four blog posts for AWM. Winners are invited to accept their scholarships live at the Gracies Luncheon in New York City."
     },{
-        title:"BSU Letterman Telecommunications Scholarship",
+        title:"BSU Letterman Scholarship",
         amount:"$10,000",
         deadline:"Apr 04, 2019",
         available:3,
