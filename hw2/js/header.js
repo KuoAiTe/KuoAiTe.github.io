@@ -4,7 +4,7 @@ var d = `
     <div class="row flex-nowrap justify-content-between align-items-center">
     <div class="col-4 pt-1"></div>
     <div class="col-4 text-center">
-        <a class="blog-header-logo text-light" href="index.html">HW</a>
+        <a class="blog-header-logo text-light" href="index.html">Matcher</a>
     </div>
     <div class="col-3 d-flex justify-content-end align-items-center">
         <a class="text-muted" href="#">
