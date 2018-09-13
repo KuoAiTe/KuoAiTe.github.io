@@ -157,7 +157,7 @@ section#college-search{
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    height:360px;
+    padding:6em;
     border-radius:0;
 }
 section#college-search-result{
@@ -166,7 +166,7 @@ section#college-search-result{
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    height:360px;
+    height:358px;
     border-radius:0;
 }
 section#scholarships-search{
@@ -175,7 +175,7 @@ section#scholarships-search{
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    height:360px;
+    padding:7.1em;
     border-radius:0;
 }
 section#banner-image{
@@ -184,7 +184,7 @@ section#banner-image{
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
-    height:360px;
+    padding:18em;
     border-radius:0;
 }
 .banner-mask{
@@ -226,7 +226,27 @@ section#banner-image{
 @media (min-width: 768px) {
   .h-md-250 { height: 250px; }
 }
-.scholarships-info{
+.h-290 { height: 290px; }
+@media (min-width: 768px) {
+  .h-md-290 { height: 290px; }
+}
+footer{
+    color: black;
+    background: white;
+    border-top: 1px solid rgb(224,224,224);
+}
+footer .social-link {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    padding-top:5px;
+    line-height: 4.3rem;
+    font-size: 1.5rem;
+    background-color: black;
+    -webkit-transition: background-color .15s ease-in-out;
+    transition: background-color .15s ease-in-out;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
 }
 /*
  * Blog name and description

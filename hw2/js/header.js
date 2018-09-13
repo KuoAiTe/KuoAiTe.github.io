@@ -25,5 +25,26 @@ var d = `
 		</nav>
     </div>
 </div>`;
-
+var footer = `
+<div class="container py-5 text-center">
+    <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+                <i class="fab fa-facebook-f text-white" style="font-size:40px;"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+                <i class="fab fa-twitter text-white" style="font-size:40px;"></i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="social-link rounded-circle" href="#">
+                <i class="fab fa-github text-white" style="font-size:40px;"></i>
+            </a>
+        </li>
+    </ul>
+    <p class="text-muted mb-0">COMP 5620 - User Interface | Assignment 2 | Ai-Te Kuo, Tian Xia</p>
+</div>`;
 $("body").prepend(d);
+$('footer').html(footer);

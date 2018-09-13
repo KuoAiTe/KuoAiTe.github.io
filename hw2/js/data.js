@@ -92,7 +92,7 @@ var scholarships = [
         GPA:"> 3.0",
         content:"The 'You Deserve It!' no-essay Scholarship from ScholarshipOwl awards $1,000 and takes only one minute to register. Without any further effort, you can apply to hundreds more scholarships automatically. Apply to scholarships without having to fill out repetitive application forms one application at a time. Why spend hours applying to one scholarship when you can apply to hundreds at the same time!On top of that, get automatically reapplied every time a scholarship renews.ScholarshipOwl is the only scholarship service helping you by automating the actual registration process for you. You can also get help from an account manager to help you with your applications, essays, and find more scholarships tailored for you. Don't wait, sign up now and be part of the future of scholarship applications today!",
     },{
-        title:"A Voice for Animals Contest",
+        title:"A Voice for Animals High School Contest",
         amount:"$500",
         deadline:"Apr 30, 2019",
         available:1,
