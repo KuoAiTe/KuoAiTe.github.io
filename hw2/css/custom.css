@@ -169,6 +169,17 @@ section#college-search-result{
     height:358px;
     border-radius:0;
 }
+
+section#scholarships{
+    position:relative;
+    background-image:url('../img/scholarship-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    padding:35vh;
+    border-radius:0;
+}
+
 section#scholarships-search{
     position:relative;
     background-image:url('../img/scholarship-background.jpg');
