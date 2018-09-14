@@ -23,7 +23,7 @@ $( document ).ready(function() {
     var write_msg = `
     <div class="row">
         <div class="col-md-12">
-            <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-danger rounded shadow-sm">
+            <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-info rounded shadow-sm">
                 <img class="mr-3" src="`+img_url+`" alt="" width="64" height="64">
                 <div class="lh-100">
                     <h2 class="mb-0 text-white lh-100">`+name+`</h2>
@@ -36,16 +36,16 @@ $( document ).ready(function() {
             </div>
             <div class="row text-center mt-3 mb-3">
                 <div class="col-lg-4">
-                <h5>Enrollment Size</h5>
-                <h2>`+enrollment_size+`</h2>
+                <h6 class="text-muted">Enrollment Size</h5>
+                <h4 class="text-muted">`+enrollment_size+`</h2>
                 </div>
                 <div class="col-lg-4">
-                <h5>Tuition fee</h5>
-                <h2>$ `+tuition+`</h2>
+                <h6 class="text-muted">Tuition fee</h5>
+                <h4 class="text-muted">$ `+tuition+`</h2>
                 </div>
                 <div class="col-lg-4">
-                <h5>Distance</h5>
-                <h2>`+distance+` miles</h2>
+                <h6 class="text-muted">Distance</h5>
+                <h4 class="text-muted">`+distance+` miles</h2>
                 </div>
             </div>
             <h3 class="border-bottom border-gray pb-2 mb-3">Location - `+college_location+`</h3>
