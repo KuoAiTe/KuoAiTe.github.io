@@ -189,6 +189,7 @@ section#scholarships-search{
     padding:7.1em;
     border-radius:0;
 }
+
 section#banner-image{
     position:relative;
     background-image:url('../img/banner-image-1.jpg');
@@ -197,6 +198,20 @@ section#banner-image{
     width:100%;
     padding:18em;
     border-radius:0;
+}
+@media (max-width: 991.98px) {
+    section#banner-image{
+        padding:5em;
+    }
+    section#scholarships{
+        position:relative;
+        background-image:url('../img/scholarship-background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:100%;
+        padding:4em;
+        border-radius:0;
+    }
 }
 .banner-mask{
     position:absolute;
