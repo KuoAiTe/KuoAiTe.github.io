@@ -1,0 +1,37 @@
+label{
+    padding-top:7px;
+}
+.pretty{
+    margin-top:10px;
+}
+div.case-helper{
+    position:absolute;
+    top:0;
+    right:0;
+    width:110px;
+    text-align:right;
+    color:red;
+    padding-top:10px;
+    padding-right:10px;
+}
+.mb-15{
+    margin-bottom:15px;
+}
+.wizard-card .tab-content{
+  padding-left:140px;
+  padding-right:140px;
+}
+
+@media (max-width: 768px) {
+  .wizard-card .tab-content{
+      padding-left:5px;
+      padding-right:5px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .wizard-card .tab-content{
+      padding-left:40px;
+      padding-right:40px;
+  }
+}

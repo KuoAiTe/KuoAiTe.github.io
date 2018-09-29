@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <title>Assignment 3</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- CSS Files -->
+    <link href="assets/css/pretty.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/simple-sidebar.css" rel="stylesheet" />
+    <link href="assets/css/paper-bootstrap-wizard.css" rel="stylesheet" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+
+    <!-- Fonts and Icons -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="image-container set-full-height" style="background-image: url('assets/img/paper-2.jpeg')">
+        <nav class="navbar navbar-default" style="border:none;border-radius: 0;background-color: #FFFFFF;     border-bottom: 1px solid black;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Alabama Uniform Traffic Accident Report</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Alabama Uniform Traffic Accident Report</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../navbar-fixed-top/">Login</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                        Sections
+                    </a>
+                    </li>
+                    <li>
+                        <a href="Aite.html">Location & Time</a>
+                    </li>
+                    <li>
+                        <a href="Sarp.html">Victims & Diagram</a>
+                    </li>
+                    <li class="active">
+                        <a href="Truck.html">Truck/Bus Supplemental Sheet</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!--      Wizard container        -->
+                        <div class="wizard-container">
+                            <div class="card wizard-card" data-color="green" id="wizard">
+                                <div class="row">
+                                    <div class="case-helper pull-right">
+                                        <span class="label label-default">Case ID: #00000</span>
+                                        <span class="label label-default">Officer: Ai-Te</span>
+                                    </div>
+                                </div>
+                                <div class="wizard-header">
+                                    <h3 class="wizard-title">List your place</h3>
+                                    <p class="category">This information will let us know more about your place.</p>
+                                </div>
+                                <div class="wizard-navigation">
+                                    <div class="progress-with-circle">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 15%;"></div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#sec-gen" data-toggle="tab">
+                                                <div class="icon-circle">
+                                                    <i class="ti-map"></i>
+                                                </div>
+                                                General Instruction
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec-scni" data-toggle="tab">
+                                                <div class="icon-circle">
+                                                    <i class="ti-map"></i>
+                                                </div>
+                                                Screening
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec-veh" data-toggle="tab">
+                                                <div class="icon-circle">
+                                                    <i class="ti-direction-alt"></i>
+                                                </div>
+                                                Vehicle
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec-motor" data-toggle="tab">
+                                                <div class="icon-circle">
+                                                    <i class="ti-direction-alt"></i>
+                                                </div>
+                                                Motor Carrier
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec-seq" data-toggle="tab">
+                                                <div class="icon-circle">
+                                                    <i class="ti-panel"></i>
+                                                </div>
+                                                Sequence of Events
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane" id="sec-gen">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h5 class="info-text">General Instruction</h5>
+                                                Complete this fomr for each qualifying vehicle <strong>ONLY</strong> if the accident meets <strong>BOTH</strong> of the following criteria:
+                                                <ol>
+                                                  <li>The accident involved a qualifying vehicle (truck with 6 or more tires or Haz/Mat placard, or a bus designed to carry 16 or more, including driver) and;</li>
+                                                  <li>The accident resulted in at least one of the following: <strong>A.</strong> one ore more fatalities <strong>B.</strong> one ore more persons injured and taken from the scene for immediate medical attention, or <strong>C.</strong> one or more involved vehicles had to be towed from the scene as a result of disabling damage or had to receive assistance to leave.
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <h5 class="info-text">Defenition</h5>
+                                            <div class="col-xs-6">
+                                                <h5 class="info-text">Truck</h5>
+                                                <p>A motor vehicle designed, used or maintained primarily for the transportation of property.
+                                                    For the purpose of this form the vehicle must also meet one of the following criteria:
+                                                <ol>
+                                                    <li>Have at least 6 tires on the ground, <strong>or</strong></li>
+                                                    <li>Carry a Hazardous Material Placard.</li>
+                                                </ol>
+                                                <h5 class="info-text">Bus</h5>
+                                                <p>A motor vehicle providing seats for 16 or more persons including the driver and used primarily for the transportation of persons.
+                                                <h5 class="info-text">Trailer</h5>
+                                                <p>A non-power vehicle towed by a motor vehicle.</p>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <h5 class="info-text">Reportable Accident</h5>
+                                                <p>A highway related incident normally investigated by a police officere and reported on a standard accident report form involving one or more trucks or buses (as defined here) which results in:
+                                                <ol>
+                                                    <li>One or more fatalities, <strong>or</strong></li>
+                                                    <li>One or more non-fatal injuries requiring transportation for the purpose of obtaining immediate medical treatment, <strong>or</strong></li>
+                                                    <li>One or more of the vehicles being removed from the scene as a result of disabling damage, <strong>or</strong></li>
+                                                    <li>One or more vehicles requiring intervening assistance before proceeding under its own power.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <h5 class="info-text">Typical Vehicle Silhouette</h5>
+                                            <div class="col-xs-6 col-md-4 col-md-4">
+                                                <h5>1. Bus</h5>
+                                                <img src="./assets/img/Silhouette_1.png" class="img-responsive">
+                                            </div>
+                                            <div class="col-xs-6 col-md-4 col-md-4">
+                                                <h5>2. Single unit truck - 2 axles / 6 tires</h5>
+                                                <img src="./assets/img/Silhouette_2.png" class="img-responsive">
+                                            </div>
+                                            <div class="clearfix visible-xs-block visible-sm-block"></div>
+                                            <div class="col-xs-6 col-md-4 col-md-4">
+                                                <h5>3. Single unit truck - 3 axles</h5>
+                                                <img src="./assets/img/Silhouette_3.png" class="img-responsive">
+                                            </div>
+                                            <div class="clearfix visible-md-block visible-lg-block"></div>
+                                            <div class="col-xs-6 col-md-4 col-md-4">
+                                                <h5>4. Truck with tailer</h5>
+                                                <img src="./assets/img/Silhouette_4.png" class="img-responsive">
+                                            </div>
+                                            <div class="clearfix visible-xs-block visible-sm-block"></div>
+                                            <div class="col-xs-6 col-md-4 col-md-4">
+                                                <h5>5. Truck tractor</h5>
+                                                <img src="./assets/img/Silhouette_5.png" class="img-responsive">
+                                            </div>
+                                            <div class="col-xs-6 col-md-4 col-md-4">
+                                                <h5>6. Tractor with semi-trailer</h5>
+                                                <img src="./assets/img/Silhouette_6.png" class="img-responsive">
+                                            </div>
+                                            <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
+                                            <div class="col-xs-6 col-md-4 col-md-4">
+                                                <h5>7. Tractor with double taileres</h5>
+                                                <img src="./assets/img/Silhouette_7.png" class="img-responsive">
+                                            </div>
+                                            <div class="col-xs-6 col-md-4 col-md-4">
+                                                <h5>8. Tractor with triple trailers</h5>
+                                                <img src="./assets/img/Silhouette_8.png" class="img-responsive">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <h5 class="info-text">Typical Hazardous Material Placards</h5>
+                                            <img src="./assets/img/Placards.png" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="sec-scni">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h5 class="info-text">Screening Information</h5>
+                                                <div class="col-xs-6">
+                                                    <p>Number of Qualifying Vehicles:</p>
+                                                    <label class="col-xs-9 col-md-9 col-lg-9">Trucks with 6 or more tires or Haz/Mat placard</label>
+                                                    <div class="col-xs-3 col-md-3 col-lg-3 mb-15">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <label class="col-xs-9 col-md-9 col-lg-9">Buses designed to carry 16 or more (including driver)</label>
+                                                    <div class="col-xs-3 col-md-3 col-lg-3 mb-15">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <p>Number of Persons:</p>
+                                                    <label class="col-xs-9 col-md-9 col-lg-9">Sustaining fatal injuries</label>
+                                                    <div class="col-xs-3 col-md-3 col-lg-3 mb-15">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <label class="col-xs-9 col-md-9 col-lg-9">Transported for <strong>immediate</strong> medical treatment</label>
+                                                    <div class="col-xs-3 col-md-3 col-lg-3 mb-15">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="sec-veh">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-md-12 col-lg-4">
+                                                <h5 class="text-center">Gross Vehicle Weight Rating(GVWR)</h5>
+                                                <div class="row">
+                                                    <label class="col-xs-6 col-md-6 col-lg-6 text-right"><strong>A.</strong> Truck, tractor, or bus</label>
+                                                    <div class="col-xs-6 col-md-6 col-lg-6 mb-15">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
+                                                    <label class="col-xs-6 col-md-6 col-lg-6 text-right"><strong>B.</strong> Trailer or trailers (total)</label>
+                                                    <div class="col-xs-6 col-md-6 col-lg-6 mb-15">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="clearfix visible-xs-block visible-sm-block"></div>
+                                                    <label class="col-xs-6 col-md-6 col-lg-6 text-right">Total GVWR for unit (A+B)</label>
+                                                    <div class="col-xs-6 col-md-6 col-lg-6 mb-15">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="clearfix visible-xs-block visible-sm-block"></div>
+                                                    <label class="col-xs-6 col-md-6 col-lg-6 text-right">Total number of axies</label>
+                                                    <div class="col-xs-6 col-md-6 col-lg-6 mb-15">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-md-12 col-lg-8">
+                                                <h5 class="text-center">Hazardous Material Involvement</h5>
+                                                <div class="row">
+                                                    <label class="col-xs-6 col-md-6 col-lg-4">Did vehicle have a Haz/Mat placard</label>
+                                                    <div class="col-xs-4 col-md-4 col-lg-2">
+                                                        <div class="form-group">
+                                                            <div class="radio" style="text-align:center">
+                                                                <label><input type="radio" name="optradio5">Yes</label>
+                                                                <label><input type="radio" name="optradio6">No</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <label style="padding-left:15px;">If Yes, include following information from placard</label>
+                                                <div class="row" style="padding-left:30px;">
+                                                    <label class="col-xs-6 col-md-6 col-lg-6">Name or 4-digit number from diamond or box</label>
+                                                    <div class="col-xs-6 col-md-6 col-lg-6 mb-15">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="padding-left:30px;">
+                                                    <label class="col-xs-6 col-md-6 col-lg-6">The 1-digit number from bottom of diamond</label>
+                                                    <div class="col-xs-6 col-md-6 col-lg-6 mb-15">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="padding-left:15px;">
+                                                    <label class="col-xs-6 col-md-6 col-lg-4">Was hazardous material released from THIS vehicl's cargo?</label>
+                                                    <div class="col-xs-4 col-md-4 col-lg-2">
+                                                        <div class="form-group">
+                                                            <div class="radio" style="text-align:center">
+                                                                <label><input type="radio" name="optradio5">Yes</label>
+                                                                <label><input type="radio" name="optradio6">No</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                    <h5 class="text-center">Vehicle Configuration</h5>
+                                                    <div class="row">
+                                                            <div class="form-group">
+                                                                <div class="radio"><label><input type="radio" name="optradio2">1 - Bus</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">2 - Single unit truck ( 2axles/ 6 or more tires)</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">3 - Single unit truck (3 or more axles)</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">4 - Truck with trailer</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">5 - Truck tractor only (bobtail)</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">6 - Tractor with semi-trailer</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">7 - Tractor with double trailers</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">8 - Tractor with triple trailers</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">9 - Unknown class heavy truck</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">0 - Any other 4-tired vehicle</label></div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                                    <h5 class="text-center">Cargo Body Type</h5>
+                                                    <div class="row">
+                                                            <div class="form-group">
+                                                                <div class="radio"><label><input type="radio" name="optradio2">1 - Bus</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">2 - Van/enclosed box</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">3 - Cargo tank</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">4 - Flatbed</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">5 - Dump</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">6 - Concrete mixer</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">7 - Auto transporter</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">8 - Garbage/refuse</label></div>
+                                                                <div class="radio"><label><input type="radio" name="optradio2">9 - Other</label></div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="sec-motor">
+                                        <div class="row">
+                                            <h5>NOTE: If NOT a motor carrier, enter NONE under Carrier Name, 0 for None under Carrier Identification Numbers, and go to Sequence Of Events Section</h5>
+                                        </div>
+                                        <div class="row form-group">
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">Carrier Name</label>
+                                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <input type="text" class="form-control" placeholder="Carrier Name">
+                                            </div>
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">Source</label>
+                                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                                <select class="form-control">
+                                                    <option>1 - Vehicle side</option>
+                                                    <option>2 - Shipping papers</option>
+                                                    <option>3 - Dr</option>iver
+                                                    <option>4 - Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">Carrier mailing address</label>
+                                            <div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
+                                                <input type="text" class="form-control" placeholder="Carrier mailing address">
+                                            </div>
+                                            <div class="clearfix visible-xs-block visible-sm-block"></div>
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">City</label>
+                                            <div class="col-xs-4 col-md-4 col-lg-4 mb-15">
+                                                <input type="text" class="form-control" placeholder="City">
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">State</label>
+                                            <div class="col-xs-4 col-md-4 col-lg-4">
+                                                <select class="form-control">
+                                                    <option>- State -</option>
+                                                </select>
+                                            </div>
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">ZIP Code</label>
+                                            <div class="col-xs-4 col-md-4 col-lg-4">
+                                                <input type="text" class="form-control" placeholder="ZIP Code">
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">Carrier Identification Numbers</label>
+                                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-4">
+                                                <input type="text" class="form-control" placeholder="None = 0">
+                                            </div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">US DOT</label>
+                                            <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <input type="text" class="form-control" placeholder="US DOT">
+                                            </div>
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">ICC MC</label>
+                                            <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <input type="text" class="form-control" placeholder="ICC MC">
+                                            </div>
+                                            <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">STATE NO.</label>
+                                            <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <input type="text" class="form-control" placeholder="STATE NO.">
+                                            </div>
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">STATE</label>
+                                            <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <input type="text" class="form-control" placeholder="STATE">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="sec-seq">
+                                        <div class="row">
+                                            <h5>Note: for THIS vehicle - list up to four</h5>
+                                        </div>
+                                        <div class="row form-group">
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">Event #1</label>
+                                            <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <input type="text" class="form-control" placeholder="Event #1">
+                                            </div>
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">Event #2</label>
+                                            <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <input type="text" class="form-control" placeholder="Event #2">
+                                            </div>
+                                            <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">Event #3</label>
+                                            <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <input type="text" class="form-control" placeholder="Event #3">
+                                            </div>
+                                            <label class="col-xs-2 col-md-2 col-lg-1 text-right">Event #4</label>
+                                            <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <input type="text" class="form-control" placeholder="Event #4">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                                <h5 class="text-center">EVENT CODES</h5>
+                                                <div class="row mb-15">
+                                                    <div class="col-xs-6">
+                                                        <h5 class="text-center">Non-Collision</h5>
+                                                        <ul style="list-style: none;">
+                                                            <li>1. Ran off road</li>
+                                                            <li>2. Jackknife</li>
+                                                            <li>3. Overtunred(rollover)</li>
+                                                            <li>4. Downhill runaway</li>
+                                                            <li>5. Cargo loss of shift</li>
+                                                            <li>6. Explosion or fire</li>
+                                                            <li>7. Separation of units</li>
+                                                            <li>8. Other non-collision</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <h5 class="text-center">Collision With</h5>
+                                                        <ul style="list-style: none;">
+                                                            <li>9. Pedestrian</li>
+                                                            <li>10. Non-parked vehicle</li>
+                                                            <li>11. Parked vehicle</li>
+                                                            <li>12. Train</li>
+                                                            <li>13. Pedalcycle</li>
+                                                            <li>14. Animal</li>
+                                                            <li>15. Fixed object</li>
+                                                            <li>16. Other object</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row form-group">
+                                                    <label class="col-xs-2 col-md-2 col-lg-1 text-right">Officer ID</label>
+                                                    <div class="col-xs-10 col-md-10 col-lg-4 mb-15">
+                                                        <input type="text" class="form-control" placeholder="Officer ID">
+                                                    </div>
+                                                    <label class="col-xs-2 col-md-2 col-lg-1 text-right">Reporting Police Agency ORI</label>
+                                                    <div class="col-xs-10 col-md-10 col-lg-4 mb-15">
+                                                        <input type="text" class="form-control" placeholder="Reporting Police Agency ORI">
+                                                    </div>
+                                                </div>
+                                                <div class="row form-group">
+                                                    <label class="col-xs-2 col-md-2 col-lg-1 text-right">Date</label>
+                                                    <div class="col-xs-3 col-md-3 col-lg-2">
+                                                        <select class="form-control">
+                                                            <option>Month</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-xs-3 col-md-3 col-lg-2">
+                                                        <select class="form-control">
+                                                            <option>Day</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-xs-3 col-md-3 col-lg-2">
+                                                        <select class="form-control">
+                                                            <option>Year</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row form-group">
+                                                    <label class="col-xs-2 col-md-2 col-lg-1 text-right">Time</label>
+                                                    <div class="col-xs-3 col-md-3 col-lg-2">
+                                                        <select class="form-control">
+                                                            <option>Hour</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-xs-3 col-md-3 col-lg-2">
+                                                        <select class="form-control">
+                                                            <option>Min</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-xs-3 col-md-3 col-lg-2">
+                                                        <select class="form-control">
+                                                            <option>AM/PM</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-15">
+                                                    <div class="col-md-12">
+                                                            <label for="unit12" class="col-sm-1 control-label">Signature of Reporting Officer</label>
+    													<img src="./assets/img/signarea.png" class="img-responsive">
+    												</div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="wizard-footer">
+                                    <div class="pull-right">
+                                        <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next' value='Next' />
+                                        <input type='button' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Finish' />
+                                    </div>
+                                    <div class="pull-left">
+                                        <input type='button' class='btn btn-previous btn-default btn-wd' name='previous' value='Previous' />
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- wizard container -->
+                    </div>
+                    <!-- row -->
+                </div>
+                <!--  big container -->
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+    <!--  Plugin for the Wizard -->
+    <script src="assets/js/paper-bootstrap-wizard.js" type="text/javascript"></script>
+    <!--  More information about jquery.validate here: http://jqueryvalidation.org/  -->
+    <script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <style>
+    .pretty .state label:after, .pretty .state label:before{
+        width:20px;
+        height:20px;
+    }
+    .pretty input[type="checkbox"]{
+        width:20px;
+        height:20px;
+    }
+</body>
+
+</html>
