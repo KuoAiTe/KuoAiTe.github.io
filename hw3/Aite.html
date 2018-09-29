@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <div class="image-container set-full-height" style="background-image: url('assets/img/paper-2.jpeg')">
+    <div class="image-container set-full-height">
         <nav class="navbar navbar-default" style="border:none;border-radius: 0;background-color: #FFFFFF;     border-bottom: 1px solid black;">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -85,14 +85,10 @@
                         <div class="wizard-container">
                             <div class="card wizard-card" data-color="green" id="wizard">
                                 <div class="row">
-                                    <div class="case-helper pull-right">
+                                    <div class="case-helper pull-right mb-15">
                                         <span class="label label-default">Case ID: #00000</span>
                                         <span class="label label-default">Officer: Ai-Te</span>
                                     </div>
-                                </div>
-                                <div class="wizard-header">
-                                    <h3 class="wizard-title">List your place</h3>
-                                    <p class="category">This information will let us know more about your place.</p>
                                 </div>
                                 <div class="wizard-navigation">
                                     <div class="progress-with-circle">
@@ -203,8 +199,8 @@
                                                         <li>74 - Ditch</li>
                                                     </ul>
                                                 </div>
-                                                <div class="clearfix visible-xs-block visible-sm-block"></div>
-                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                <div class="clearfix visible-sm-block"></div>
+                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                                     <ul style="list-style: none;">
                                                         <li>75 - Overpass/Underpass</li>
                                                         <li>76 - Other Fixed Object</li>
@@ -225,7 +221,7 @@
                                             </div>
                                             <div class="row">
                                                 <h5 class="text-center">Contributing Circumstances</h5>
-                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                                     <ul style="list-style: none;">
                                                         <li>01 - Improper Passing</li>
                                                         <li>02 - Improper Lane Change/Usage</li>
@@ -241,7 +237,7 @@
                                                         <li>12 - Fail to Heed Sign/Signal</li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                                     <ul style="list-style: none;">
                                                         <li>13 - Improper Driving-Environ</li>
                                                         <li>14 - Road Defect</li>
@@ -258,7 +254,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block"></div>
-                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                                     <ul style="list-style: none;">
                                                         <li>25 - Veh Pushed by Person</li>
                                                         <li>26 - Veh Left Road</li>
@@ -277,7 +273,7 @@
                                             </div>
                                             <div class="row">
                                                 <h5 class="text-center">Driver Maneuver</h5>
-                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                                     <ul style="list-style: none;">
                                                         <li>01 - Go Straight Ahead</li>
                                                         <li>02 - Pass on Left</li>
@@ -293,7 +289,7 @@
                                                         <li>12 - Wrong Way – 1-Way</li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                                     <ul style="list-style: none;">
                                                         <li>13 - Right Turn</li>
                                                         <li>14 - Left Turn</li>
@@ -310,7 +306,7 @@
                                                     </ul>
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block"></div>
-                                                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                                     <ul style="list-style: none;">
                                                         <li>63 - PedCyc Ride Against Traffic off Rd</li>
                                                         <li>64 - PedCyc Ride Across Road</li>
@@ -327,7 +323,7 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-xs-6">
+                                                <div class="col-xs-12 col-sm-6">
                                                     <h5 class="text-center">Pedstrain Action</h5>
                                                     <ul style="list-style: none;">
                                                         <li>01 - Cross/Enter – Intersection</li>
@@ -345,7 +341,7 @@
                                                         <li>99 - Unknown</li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-xs-6">
+                                                <div class="col-xs-12 col-sm-6">
                                                     <h5 class="text-center">Event Loc</h5>
                                                     <ul style="list-style: none;">
                                                         <li>01 - On Roadway</li>
@@ -362,56 +358,66 @@
                                     <div class="tab-pane" id="sec-loc">
                                         <div class="row">
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Date</label>
-                                                <div class="col-xs-3 col-md-3 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Date</label>
+                                                <div class="col-xs-9 col-sm-3 col-md-3 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>Month</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-xs-3 col-md-3 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <div class="col-xs-3 visible-xs-block"></div>
+                                                <div class="col-xs-9 col-sm-3 col-md-3 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>Day</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-xs-3 col-md-3 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <div class="col-xs-3 visible-xs-block"></div>
+                                                <div class="col-xs-9 col-sm-3 col-md-3 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>Year</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Time</label>
-                                                <div class="col-xs-3 col-md-3 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Time</label>
+                                                <div class="col-xs-9 col-sm-3 col-md-3 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>Hour</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-xs-3 col-md-3 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <div class="col-xs-3 visible-xs-block"></div>
+                                                <div class="col-xs-9 col-sm-3 col-md-3 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>Min</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-xs-3 col-md-3 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <div class="col-xs-3 visible-xs-block"></div>
+                                                <div class="col-xs-9 col-sm-3 col-md-3 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>AM/PM</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">County</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
-                                                    <select name="country" class="form-control">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">County</label>
+                                                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+                                                    <select name="country" class="form-control mb-15">
                                                         <option>- County -</option>
                                                     </select>
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">City</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">City</label>
+                                                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select name="country" class="form-control">
                                                         <option>- City -</option>
                                                     </select>
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Rural</label>
-                                                <div class="col-xs-4 col-md-4">
+                                                <div class="clearfix visible-xs-block visible-sm-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Rural</label>
+                                                <div class="col-xs-4 col-sm-4 col-md-4 mb-15">
                                                     <div class="pretty p-default">
                                                        <input type="checkbox" />
                                                        <div class="state p-primary">
@@ -421,34 +427,34 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">On Street, Road, Highway</label>
-                                                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-6">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">On Street, Road, Highway</label>
+                                                <div class="col-xs-9 col-sm-10 col-md-10 col-lg-6 mb-15">
                                                     <input type="text" class="form-control" placeholder="Address">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
                                                 <h5 class="text-center">At Intersection of or Between</h5>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Node 1</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Node 1</label>
+                                                <div class="col-xs-3 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Node 1">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Code</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Code</label>
+                                                <div class="col-xs-3 col-sm-4 col-md-4 col-lg-2">
                                                     <input type="text" class="form-control" placeholder="Code 1">
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Node 2</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Node 2</label>
+                                                <div class="col-xs-3 col-sm-4 col-md-4 col-lg-2">
                                                     <input type="text" class="form-control" placeholder="Node 2">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Code</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Code</label>
+                                                <div class="col-xs-3 col-sm-4 col-md-4 col-lg-2">
                                                     <input type="text" class="form-control" placeholder="Code 2">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Feet Miles</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Feet Miles</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <div class="row">
                                                         <div class="col-xs-6">
                                                             <input type="text" class="form-control" placeholder="Feet Miles">
@@ -463,8 +469,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Intersection Related</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Intersection Related</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select name="country" class="form-control">
                                                        <option selected="">N - Not Int. Related</option>
                                                        <option>1. Node 1</option>
@@ -472,12 +479,13 @@
                                                    </select>
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Mile Post</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Mile Post</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Mile Post">
                                                 </div>
-                                                <label class="col-xs-2  col-md-2 col-lg-1 text-right">Control Access Hway Loc</label>
-                                                <div class="col-xs-3 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Control Access Hway Loc</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select name="country" class="form-control">
                                                        <option selected="">1 - Main Rd</option>
                                                        <option>2 - Frontage Rd</option>
@@ -486,59 +494,65 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Prime Contrib Circums</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-1">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Prime Contrib Circums</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-1 mb-15">
                                                     <input type="text" class="form-control" placeholder="Prime Contrib Circums">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Prime Contrib Unit No</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-1">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Prime Contrib Unit No</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-1 mb-15">
                                                     <input type="text" class="form-control" placeholder="Prime Contrib Circums">
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">First Harmful Event</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-1">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">First Harmful Event</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-1 mb-15">
                                                     <input type="text" class="form-control" placeholder="First Harmful Event">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Event Location</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-1">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Event Location</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-1 mb-15">
                                                     <input type="text" class="form-control" placeholder="Event Location">
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">First Harmful Event</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-1">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">First Harmful Event</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-1 mb-15">
                                                     <input type="text" class="form-control" placeholder="First Harmful Event">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Event Location</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-1">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Event Location</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-1 mb-15">
                                                     <input type="text" class="form-control" placeholder="Event Location">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2  col-md-2 col-lg-1 text-right">No. of Vehicles</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">No. of Vehicles</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="No. of Vehicles">
                                                 </div>
-                                                <label class="col-xs-2  col-md-2 col-lg-1 text-right">No. Pedestrains</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">No. Pedestrains</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="No. Pedestrains">
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2  col-md-2 col-lg-1 text-right">No. of Injured</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">No. of Injured</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="No. of Injured">
                                                 </div>
-                                                <label class="col-xs-2  col-md-2 col-lg-1 text-right">No. Fatalities</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">No. Fatalities</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="No. Fatalities">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2  col-md-2 col-lg-1 text-right">Unit 1 Type</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Unit 1 Type</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="NUnit 1 Type">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Unit 2 Type</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Unit 2 Type</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Unit 2 Type">
                                                 </div>
                                             </div>
@@ -547,12 +561,13 @@
                                     <div class="tab-pane" id="sec-drv">
                                         <div class="row">
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Unit No.</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-5">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Unit No.</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-5 mb-15">
                                                     <input type="text" class="form-control" placeholder="UNIT No.">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Left Scene</label>
-                                                <div class="col-xs-1 col-md-1 col-lg-1 mb-15">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Left Scene</label>
+                                                <div class="col-xs-3 col-sm-1 col-md-1 col-lg-1 mb-15">
                                                     <div class="pretty p-default">
                                                         <input type="checkbox" />
                                                         <div class="state p-primary">
@@ -560,8 +575,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Com Veh</label>
-                                                <div class="col-xs-1 col-md-1 col-lg-1 mb-15">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Com Veh</label>
+                                                <div class="col-xs-3 col-sm-1 col-md-1 col-lg-1 mb-15">
                                                     <div class="pretty p-default">
                                                         <input type="checkbox" />
                                                         <div class="state p-primary">
@@ -571,76 +586,84 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Driver Full Name</label>
-                                                <div class="col-xs-3 col-md-3 col-lg-2">
-
+                                                <label class="col-xs-3 col-md-2 col-lg-1 text-right">Driver Full Name</label>
+                                                <div class="col-xs-9 col-md-3 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="First Name">
                                                 </div>
-                                                <div class="col-xs-3 col-md-3 col-lg-2">
-
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <div class="col-xs-3 visible-xs-block"></div>
+                                                <div class="col-xs-9 col-md-3 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Middle Name">
                                                 </div>
-                                                <div class="col-xs-3 col-md-3 col-lg-2">
-
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <div class="col-xs-3 visible-xs-block"></div>
+                                                <div class="col-xs-9 col-md-3 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Last Name">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Street Address</label>
-                                                <div class="col-xs-10 col-md-9 col-lg-6">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Street Address</label>
+                                                <div class="col-xs-9 col-sm-10 col-md-9 col-lg-6 mb-15">
                                                     <input type="text" class="form-control" placeholder="First Name">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">City</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">City</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="City">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">State</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">State</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>- State -</option>
                                                     </select>
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">ZIP Code</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">ZIP Code</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="ZIP Code">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Telephone No.</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Telephone No.</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Tel.">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Date of Birth</label>
-                                                <div class="col-xs-3 col-md-3 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Date of Birth</label>
+                                                <div class="col-xs-9 col-sm-3 col-md-3 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>Month</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-xs-3 col-md-3 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <div class="col-xs-3 visible-xs-block"></div>
+                                                <div class="col-xs-9 col-sm-3 col-md-3 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>Day</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-xs-3 col-md-3 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <div class="col-xs-3 visible-xs-block"></div>
+                                                <div class="col-xs-9 col-sm-3 col-md-3 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>Year</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Race</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Race</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                        <option selected="">White</option>
                                                        <option>Asian</option>
                                                        <option>Black</option>
                                                    </select>
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Sex</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Sex</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                        <option selected="">Male</option>
                                                        <option>Female</option>
@@ -648,19 +671,20 @@
                                                </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Driver License No.</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Driver License No.</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Driver License No.">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">DL State</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">DL State</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>- State -</option>
                                                     </select>
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">DL Class</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">DL Class</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select name="country" class="form-control">
                                                        <option selected="">A</option>
                                                        <option>B</option>
@@ -670,8 +694,9 @@
                                                        <option>V</option>
                                                    </select>
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">DL Status</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">DL Status</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select name="country" class="form-control">
                                                        <option selected="">OK</option>
                                                        <option>expired</option>
@@ -679,21 +704,23 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">List Restrictions Not Complied With</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">List Restrictions Not Complied With</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">CDL Status</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">CDL Status</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">List Endorsements Not Complied With</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">List Endorsements Not Complied With</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Residence Less Than 25 Miles</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Residence Less Than 25 Miles</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <div class="form-group">
                                                         <div class="radio" style="text-align:center">
                                                             <label><input type="radio" name="optradio5">Yes</label>
@@ -703,27 +730,24 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Place of Employment</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Place of Employment</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Liability Insurance Co.</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Liability Insurance Co.</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Social Security No.</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Social Security No.</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                            </div>
-                                            <div class="row form-group">
-                                            </div>
-                                            <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Driver Condition</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Driver Condition</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                        <option selected="">1 - No Defect</option>
                                                        <option>2 - Apparently Asleep</option>
@@ -731,8 +755,9 @@
                                                        <option>4 - Ill</option>
                                                    </select>
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Sobriety (Officer's Opinion) Alcohol</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Sobriety (Officer's Opinion) Alcohol</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                        <option selected="">Unknown</option>
                                                        <option>Yes</option>
@@ -740,8 +765,8 @@
                                                    </select>
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Sobriety (Officer's Opinion) Drugs</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Sobriety (Officer's Opinion) Drugs</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                        <option selected="">Unknown</option>
                                                        <option>Yes</option>
@@ -750,8 +775,8 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Type Test Given</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Type Test Given</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                        <option selected="">9 - No Test</option>
                                                        <option>1 - Blood Test</option>
@@ -761,27 +786,30 @@
                                                        <option>5 - Refused Test</option>
                                                    </select>
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Test Results</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Test Results</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Maneuver / Action</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Maneuver / Action</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Travel Road Name</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Travel Road Name</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Road Code</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Road Code</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Travel Direction</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Travel Direction</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                        <option selected="">U-Unknown</option>
                                                        <option>N</option>
@@ -791,19 +819,20 @@
                                                        <option>A - Not on Rd</option>
                                                    </select>
                                                 </div>
-                                            </div>x
+                                            </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Other contrib Circumstance</label>
-                                                <div class="col-xs-4 col-md-6 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Other contrib Circumstance</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-6 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Prime Harm Event</label>
-                                                <div class="col-xs-4 col-md-6 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Prime Harm Event</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-6 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Event Loc</label>
-                                                <div class="col-xs-4 col-md-6 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Event Loc</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-6 col-lg-2 mb-15">
                                                     <input type="text" class="form-control">
                                                 </div>
                                             </div>
@@ -849,52 +878,56 @@
                                         <div class="row">
 
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Vehicle No.</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-5">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Vehicle No.</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-5 mb-15">
                                                     <input type="text" class="form-control" placeholder="Vehicle No.">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Pedestrain No</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-5 mb-15">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Pedestrain No</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-5 mb-15">
                                                     <input type="text" class="form-control" placeholder="Pedestrain No">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Vehicle Year</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Vehicle Year</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Vehicle Year">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Make</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Make</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Make">
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Model</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Model</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Model">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Body</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Body</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Body">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">V.I.N.</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">V.I.N.</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="V.I.N.">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">License Tag Number</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">License Tag Number</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="License Tag#">
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">State</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">State</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>- State -</option>
                                                     </select>
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Year</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Year</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>- Year -</option>
                                                     </select>
@@ -902,44 +935,49 @@
                                             </div>
 
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Owner's Name</label>
-                                                <div class="col-xs-3 col-md-3">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Owner's Name</label>
+                                                <div class="col-xs-9 col-md-3 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="First Name">
                                                 </div>
-                                                <div class="col-xs-3 col-md-3">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <div class="col-xs-3 visible-xs-block"></div>
+                                                <div class="col-xs-9 col-md-3 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Middle Name">
                                                 </div>
-                                                <div class="col-xs-3 col-md-3">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <div class="col-xs-3 visible-xs-block"></div>
+                                                <div class="col-xs-9 col-md-3 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Last Name">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Street or R.F.D</label>
-                                                <div class="col-xs-10 col-md-9 col-lg-6">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Street or R.F.D</label>
+                                                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-6 mb-15">
                                                     <input type="text" class="form-control" placeholder="Address">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">City</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">City</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                 <input type="text" class="form-control" placeholder="City">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">State</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">State</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>- State -</option>
                                                     </select>
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">ZIP</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">ZIP</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2">
                                                 <input type="text" class="form-control" placeholder="ZIP">
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <h5 style="text-align:center">Type</h5>
-                                                    <div class="col-xs-6 col-md-6">
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
                                                         <div class="form-group">
                                                             <div class="radio">
                                                                 <label>
@@ -983,7 +1021,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-xs-6 col-md-6">
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
                                                         <div class="form-group">
                                                             <div class="radio">
                                                                 <label>
@@ -1030,7 +1068,7 @@
                                                 </div>
                                                 <div class="col-md-4">
                                                     <h5 style="text-align:center">Usage</h5>
-                                                    <div class="col-xs-6 col-md-6">
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
                                                         <div class="form-group">
                                                             <div class="radio">
                                                                 <label>
@@ -1070,7 +1108,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-xs-6 col-md-6">
+                                                    <div class="col-xs-12 col-sm-6 col-md-6">
                                                         <div class="form-group">
                                                             <div class="radio">
                                                                 <label>
@@ -1108,7 +1146,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block"></div>
-                                                <div class="col-md-2">
+                                                <div class="col-xs-12 col-md-2">
                                                     <h5 style="text-align:center">Hazardous Cargo</h5>
                                                     <div class="form-group">
                                                         <div class="radio">
@@ -1155,10 +1193,10 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <div class="col-md-4">
+                                                <div class="col-xs-12 col-md-4">
                                                     <h5 class="text-center">Attachment</h5>
                                                     <div class="row">
-                                                        <div class="col-xs-6 col-md-6">
+                                                        <div class="col-xs-12 col-sm-6 col-md-6">
                                                             <div class="form-group">
                                                                 <div class="radio">
                                                                     <label>
@@ -1186,7 +1224,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xs-6 col-md-6">
+                                                        <div class="col-xs-12 col-sm-6 col-md-6">
                                                             <div class="form-grup">
                                                                 <div class="radio">
                                                                     <label>
@@ -1216,7 +1254,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        <div class="col-xs-6 col-md-6">
+                                                        <div class="col-xs-12 col-sm-6 col-md-6">
                                                             <div class="form-group">
                                                                 <h5 style="text-align:center">Oversized Load</h5>
                                                                 <div class="radio" style="text-align:center">
@@ -1229,7 +1267,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xs-6 col-md-6">
+                                                        <div class="col-xs-12 col-sm-6 col-md-6">
                                                             <div class="form-group">
                                                                 <h5 style="text-align:center">If Yes, Did Owner Have Permit?</h5>
                                                                 <div class="radio" style="text-align:center">
@@ -1247,7 +1285,7 @@
                                                 <div class="col-md-4">
                                                     <h5 style="text-align:center">Contributing Defect</h5>
                                                     <div class="form-group">
-                                                        <div class="col-xs-6 col-md-6">
+                                                        <div class="col-xs-12 col-sm-6 col-md-6">
                                                             <div class="radio">
                                                                 <label>
                                                                     <input type="radio" name="optradio2">97 - None</label>
@@ -1285,7 +1323,7 @@
                                                                     <input type="radio" name="optradio2">8 - Turn Signal</label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xs-6 col-md-6">
+                                                        <div class="col-xs-12 col-sm-6 col-md-6">
                                                             <div class="radio">
                                                                 <label>
                                                                     <input type="radio" name="optradio2">9 - Windows/W. Shield</label>
@@ -1322,7 +1360,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block"></div>
-                                                <div class="col-md-4">
+                                                <div class="col-xs-12 col-md-4">
                                                     <h5 style="text-align:center">Circle Areas Damaged On Diagram</h5>
                                                     <table class="damage" style="width:300px;margin: auto;margin-top:15px;">
                                                         <tbody>
@@ -1467,24 +1505,23 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Speed Limit</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2 mb-15">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Speed Limit</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Speed Limit">
                                                 </div>
-
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Est Speed</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Est Speed</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Estimated Speed">
                                                 </div>
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Citation Offense Charged</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Citation Offense Charged</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Citation Offense Charged">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Damage Severity</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Damage Severity</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <select class="form-control">
                                                         <option>1 - None Visible</option>
                                                         <option>2 - Not Disabled</option>
@@ -1493,31 +1530,32 @@
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Vehicle Towed Away</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Vehicle Towed Away</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2">
                                                     <select class="form-control">
                                                         <option>Yes</option>
                                                         <option>No</option>
                                                     </select>
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Towed by Whom</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Towed by Whom</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Towed by">
                                                 </div>
-
                                                 <div class="clearfix visible-xs-block visible-sm-block visible-md-block"></div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">To Where</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">To Where</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="To Where">
                                                 </div>
                                             </div>
                                             <div class="row form-group">
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Occupants in Unit</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Occupants in Unit</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Occupants in Unit">
                                                 </div>
-                                                <label class="col-xs-2 col-md-2 col-lg-1 text-right">Total Injuries in Unit</label>
-                                                <div class="col-xs-4 col-md-4 col-lg-2">
+                                                <div class="clearfix visible-xs-block"></div>
+                                                <label class="col-xs-3 col-sm-2 col-md-2 col-lg-1 text-right">Total Injuries in Unit</label>
+                                                <div class="col-xs-9 col-sm-4 col-md-4 col-lg-2 mb-15">
                                                     <input type="text" class="form-control" placeholder="Total Injury">
                                                 </div>
                                             </div>
