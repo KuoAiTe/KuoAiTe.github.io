@@ -62,33 +62,54 @@
           <div id="ap-publication.html" class="page ay-current" data-pos="/publication.html">
             
 
+
 <section class="color-2 ss-style-doublediagonal">
   <div class="row justify-content-center">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
       <h1 class="page-title">Publications</h1>
-
       <div class="row justify-content-center">
         <div class="col-md-2">
-            <h3>Filter by type:</h3>
+          <h3>Filter by type:</h3>
         </div>
-        <div class="col-md-8">
-            <div class="cd-dropdown"><span style="z-index: 1005;">All types</span><input type="hidden" name="cd-dropdown" value="all"><ul style="height: auto;"><li data-value="all" style="z-index: 1004; top: 0px; left: 0px; margin-left: 0px; opacity: 1; transform: none; transition: all 300ms ease;"><span class="filter">All types</span></li><li data-value="jpaper" style="z-index: 1003; top: 0px; left: 0px; margin-left: 0px; opacity: 1; transform: none; transition: all 300ms ease;"><span class="filter">Jounal Papers</span></li><li data-value="cpaper" style="z-index: 1002; top: 3px; left: 0px; margin-left: 0px; opacity: 1; transform: none; transition: all 300ms ease;"><span class="filter">Conference Papers</span></li><li data-value="bookchapter" style="z-index: 1001; top: 6px; left: 2px; margin-left: 0px; opacity: 1; transform: none; width: 517px; transition: all 300ms ease;"><span class="filter">Book Chapters</span></li><li data-value="book" style="z-index: 1000; top: 9px; left: 4px; margin-left: 0px; opacity: 1; transform: none; width: 513px; transition: all 300ms ease;"><span class="filter">Books</span></li></ul></div>
+
+        <div class="col-md-8"><input  class="form-control" type="text" id="searchInput" onkeyup="searchPublication()" placeholder="Search for names.." title="Type in a name">
+          <div class="cd-dropdown">
+            <span style="z-index: 1005;">All types</span>
+            <input type="hidden" name="cd-dropdown" value="all">
+            <ul style="height: auto;">
+              <li data-value="all" style="z-index: 1004; top: 0px; left: 0px; margin-left: 0px; opacity: 1; transform: none; transition: all 300ms ease;">
+                <span class="filter">All types</span>
+              </li>
+              <li data-value="jpaper" style="z-index: 1003; top: 0px; left: 0px; margin-left: 0px; opacity: 1; transform: none; transition: all 300ms ease;">
+                <span class="filter">Jounal Papers</span>
+              </li>
+              <li data-value="cpaper" style="z-index: 1002; top: 3px; left: 0px; margin-left: 0px; opacity: 1; transform: none; transition: all 300ms ease;">
+                <span class="filter">Conference Papers</span>
+              </li>
+              <li data-value="bookchapter" style="z-index: 1001; top: 6px; left: 2px; margin-left: 0px; opacity: 1; transform: none; width: 517px; transition: all 300ms ease;">
+                <span class="filter">Book Chapters</span>
+              </li>
+              <li data-value="book" style="z-index: 1000; top: 9px; left: 4px; margin-left: 0px; opacity: 1; transform: none; width: 513px; transition: all 300ms ease;">
+                <span class="filter">Books</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="col-md-2" id="sort">
-            <span>Sort by year:</span>
-            <div class="btn-group pull-right">
-                <button type="button" data-sort="data-year" data-order="desc" class="sort btn btn-default"><i class="icon-sort-by-order"></i></button>
-                <button type="button" data-sort="data-year" data-order="asc" class="sort btn btn-default"><i class="icon-sort-by-order-alt"></i></button>
-            </div>
+          <span>Sort by year:</span>
+          <div class="btn-group pull-right">
+            <button type="button" data-sort="data-year" data-order="desc" class="sort btn btn-default"><i class="icon-sort-by-order"></i></button>
+            <button type="button" data-sort="data-year" data-order="asc" class="sort btn btn-default"><i class="icon-sort-by-order-alt"></i></button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="section color-1" id="pub-grid">
+<section class="section color-1">
     <div class="row justify-content-center">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10" id="publication">
         <div class="pitems">
           <div class="item mix cpaper mix_all" data-year="2018" style="display: block;  opacity: 1;">
             <div class="pubmain">
@@ -179,13 +200,6 @@
               <h4 class="pubtitle">Developing New Mathematical Applications Utilizing Smart Table Access</h4>
               <div class="pubauthor">Seals, C. D. (20%), Swanier, C. (20%), Nyagwencha, J. N.* (20%), Cagle, A.* (20%), Dawkins, S.* (10%), Houser, N.* (10%)</div>
               <div class="pubcite"><span class="badge badge-warning">Conference Papers</span>Journal of School Educational Technology, VOL. 7. NO.4 (ISSN: 0973-2217, E-ISSN: 2230 – 7133)), p24-32.</div>
-            </div>
-          </div>
-          <div class="item mix cpaper mix_all" data-year="2013" style="display: block;  opacity: 1;">
-            <div class="pubmain">
-              <h4 class="pubtitle"></h4>
-              <div class="pubauthor"></div>
-              <div class="pubcite"><span class="badge badge-warning">Conference Papers</span></div>
             </div>
           </div>
           <div class="item mix cpaper mix_all" data-year="2011" style="display: block;  opacity: 1;">
@@ -286,6 +300,28 @@
       </div>
     </div>
 </section>
+
+<script>
+function searchPublication() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  publication = document.getElementById("publication");
+  publication_container = publication.getElementsByClassName("pitems").item(0);
+  publication_list = publication_container.getElementsByClassName("item");
+  for (i = 0; i < publication_list.length; i++) {
+    pubtitle = publication_list[i].getElementsByClassName("pubtitle")[0];
+    if (pubtitle) {
+      txtValue = pubtitle.textContent || pubtitleinnerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        publication_list[i].style.display = "";
+      } else {
+        publication_list[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
 
           </div>
         </div>
