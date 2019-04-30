@@ -94,8 +94,8 @@ function show_multiComparePage(){
 							var country_name = dataCountry[country_id].name;
 							var resource_name = country_name.toLowerCase().replace(' ','_');
 							result += `
-									<div class="row pl-5">
-										<div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
+									<div class="row pl-4 pr-4">
+										<div class="col-4 col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-1">
 											<div class="card country-card" country_id="17">
 												<img class="country-flag card-img-top" src="images/flags/`+resource_name+`.png">
 												<div class="country-body card-body text-center">
@@ -103,7 +103,7 @@ function show_multiComparePage(){
 												</div>
 											</div>
 										</div>
-										<div class="col-12 col-xs-6 col-sm-8 col-md-9 col-lg-10 col-xl-11">`+characteristic_description+`
+										<div class="col-8 col-xs-8 col-sm-8 col-md-9 col-lg-10 col-xl-11">`+characteristic_description+`
 										</div>
 									</div>`;
 							//result += `<div class="row"><div class="col-xl-1"><img class="country-flag" src="images/flags/></div><div class='col-9'>`+characteristic_description+`</div></div>`;
