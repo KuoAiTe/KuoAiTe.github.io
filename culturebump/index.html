@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Culture Bump</title>
+  <!-- plugins:css -->
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <script src="js/jquery-3.4.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+    <aside class="mdc-persistent-drawer">
+      <nav class="mdc-persistent-drawer__drawer">
+        <div class="mdc-persistent-drawer__toolbar-spacer">
+          <a href="index.html" class="brand-logo">
+						<img src="images/logo.png" alt="logo">
+					</a>
+        </div>
+        <div class="social-media-icons mb-4">
+        	<div class="d-flex justify-content-center"">
+	        	<a class="p-2" href="https://www.culturebump.com"><img src="images/socia-media/icon_house.png"></a>
+	        	<a class="p-2" href="https://www.facebook.com/CultureBumpApproach/"><img src="images/socia-media/icon_facebook.png"></a>
+	        	<a class="p-2" href="https://twitter.com/culturebump"><img src="images/socia-media/icon_twitter.png"></a>
+	        </div>
+        </div>
+        <div class="mdc-list-group bg-primary">
+          <nav class="mdc-list mdc-drawer-menu">
+            <div class="mdc-list-item mdc-drawer-item">
+              <a id="menu-item-home" class="menu-item mdc-drawer-link text-white">Home</a>
+              <a id="menu-item-world" class="menu-item mdc-drawer-link text-white">World Map</a>
+              <a id="menu-item-change" class="menu-item mdc-drawer-link text-white">Change Home Country</a>
+            </div>
+          </nav>
+          
+        </div>
+        <ul class="list-group">
+				  <li class="list-group-item"><a href="https://culturebump.com/resources/how-to-use-the-global-classrooms-app-culturally-homogenous-classrooms/">Suggested Uses in the culturally homogeneous classroom</a></li>
+				  <li class="list-group-item"><a href="https://culturebump.com/resources/how-to-use-the-global-classrooms-app-culturally-mixed-classrooms/">Suggested Uses in the ESL/EFL classroom or groups with diverse backgrounds</a></li>
+				  <li class="list-group-item"><a href="https://culturebump.com/uncategorized/how-to-use-the-app-as-an-icebreaker/">How to use the app as an "icebreaker"</a></li>
+				</ul>
+      </nav>
+    </aside>
+    <!-- partial -->
+    <!-- partial:partials/_navbar.html -->
+    <header class="mdc-toolbar mdc-elevation--z4 mdc-toolbar--fixed">
+      <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <a href="javascript:void(0)" class="menu-toggler material-icons mdc-toolbar__menu-icon">menu</a>
+          <span class="mdc-toolbar__input">
+            <div class="mdc-text-field text-center text-white">
+              <h3>CultureBump</h3>
+            </div>
+          </span>
+        </section>
+      </div>
+    </header>
+    <!-- partial -->
+    <div class="page-wrapper mdc-toolbar-fixed-adjust">
+      <main class="content-wrapper drawer-minimized pt-0">
+		    <div id="googleMap" style="width:100%;height:400px;"></div>
+      	<div class="row">
+	      	<div id="detailPage" class="col-12">
+		      	<nav>
+						  <div id="detailPage_Tab" class="nav nav-tabs" role="tablist">
+						  	<a class="col-3 bg-white nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#detailPage_SelectedCountry" role="tab" aria-controls="nav-home" aria-selected="true"></a>
+								<a class="col-3 bg-white nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#detailPage_HomeCountry" role="tab" aria-controls="nav-home"></a>
+								<a class="col-3 bg-white nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#detailPage_Similarity" role="tab" aria-controls="nav-home">Similarities</a>
+								<a class="col-3 bg-white nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#detailPage_Difference" role="tab" aria-controls="nav-home">Culture Bumps</a>
+								
+						  </div>
+						</nav>	
+						<div class="tab-content" id="nav-tabContent">
+						  <div id="detailPage_SelectedCountry" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+						  <div id="detailPage_HomeCountry" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+						  <div id="detailPage_Similarity" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
+						  <div id="detailPage_Difference" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
+						</div>
+	      	</div>
+	      	<div id="homePage">
+		      	<div id="homeCountryDisplay" class="col-12 text-center">
+		      		<h2 class="mt-4 mb-3">Home Country</h2>
+		      		<div class="d-flex justify-content-center">
+								<div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1 card country-card">
+									<img id="homeCountryFlag" class="country-flag card-img-top" src="images/flags/the_usa.png">
+								</div>
+							</div>
+							<h2 id="homeCountryName" class="country-name card-text mt-3 mb-3">The U.S.A</h2>
+							<div class="p-3 text-left">
+							Multi-Contires Comparison  
+							<input id="compare" type="checkbox" data-toggle="toggle" data-onstyle="warning" data-offstyle="light">
+							</div>
+		      	</div>
+		      	<div id="continentList" class="continent-container col-12"></div>
+		      </div>
+	      </div>
+      </main>
+      <!-- partial:partials/_footer.html -->
+      <footer>
+      </footer>
+      <!-- partial -->
+    </div>
+    
+  <!-- body wrapper -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcY-rWnRp_CvEeeJkd91kzKsf4Ziwb_84&callback=myMap"></script>
+	<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
+  <script src="js/material-components-web.min.js"></script>
+  <script src="js/misc.js"></script>
+
+  <script src="js/init.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/culturebump.js"></script>
+  <script src="js/culturebump_map.js"></script>
+</body>
+
+</html>
