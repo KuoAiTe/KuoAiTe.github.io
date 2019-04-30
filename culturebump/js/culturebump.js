@@ -13,13 +13,17 @@ var selectedCountryID = 0;
 var defaultZoomLevel = 1.8;
 var flag_markers = {};
 var infowindow = null;
+var compareMode = false;
+var selectedCountries = new Set();
 var map;
 $(function() {
 	$.getJSON( "js/culturebump.json", function( data ) {
 		map_init();
 		data_init(data);
 		view_init();
+		$('#comparePage').hide();
 		$('#detailPage').hide();
+		$('#googleMap').hide();
 		//$('#googleMap').hide();
 		if(window.history.state)
 			restoreContent(window.history);
@@ -49,20 +53,80 @@ function restoreContent(e){
 	console.log(stateObj);
 	if(stateObj){
 		currentScreen = stateObj.currentScreen;
-		selectedCountryID = stateObj.selectedCountryID;
+		if(stateObj.selectedCountryID)
+			selectedCountryID = stateObj.selectedCountryID;
+		if(stateObj.selectedCountries)
+			selectedCountries = stateObj.selectedCountries;
 		if(currentScreen == 'home')
 			show_home();
-		else if(currentScreen == 'detailPage')
+		else if (currentScreen == 'detailPage')
 			show_country();
 		else if (currentScreen == 'worldMap')
 			show_worldmap();
+		else if (currentScreen == 'multiComparePage')
+			show_multiComparePage();
 	}else{
-		show_continentList();
+		show_home();
 	}
+}
+function show_multiComparePage(){
+	$("#homePage").hide();
+	$('#detailPage').hide();
+	$('#googleMap').hide();
+	$('#comparePage').show(300);
+	// compareDetail
+	result = '';
+	for (var category_id in dataCategory){
+		var category_name = dataCategory[category_id];
+		result += `<div id="compare_`+category_id+`" class="tab-pane fade " role="tabpanel" aria-labelledby="nav-home-tab">`;
+		for(var behavior_id in dataBehavior){
+			var temp_category_id = dataBehavior[behavior_id].category_id;
+			if(category_id == temp_category_id){
+				var behavior_description = dataBehavior[behavior_id].behavior_id_description;
+				result += `<div class="bar-title bg-primary col-12 mb-3">`+behavior_description+`</div>`;
+				for (var country_id of selectedCountries){
+					var characteristicsList = dataCountry[country_id].characteristicsList;
+					for( var index in characteristicsList){
+						var characteristic_id = characteristicsList[index];
+						var temp_behavior_id = dataCharacteristic[characteristic_id].behavior_id;
+						var characteristic_description = dataCharacteristic[characteristic_id].characteristic_description;
+						if ( behavior_id == temp_behavior_id){
+							var country_name = dataCountry[country_id].name;
+							var resource_name = country_name.toLowerCase().replace(' ','_');
+							result += `
+									<div class="row pl-5">
+										<div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1">
+											<div class="card country-card" country_id="17">
+												<img class="country-flag card-img-top" src="images/flags/`+resource_name+`.png">
+												<div class="country-body card-body text-center">
+													<p class="country-name card-text">`+country_name+`</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-xs-6 col-sm-8 col-md-9 col-lg-10 col-xl-11">`+characteristic_description+`
+										</div>
+									</div>`;
+							//result += `<div class="row"><div class="col-xl-1"><img class="country-flag" src="images/flags/></div><div class='col-9'>`+characteristic_description+`</div></div>`;
+						}
+					}
+				}
+			}
+		}
+		result += `</div>`;
+	}
+	$('#compare-tabContent').html(result);
+	$('#comparePage_Tab a.nav-link:first').click();
+	var link = $('#comparePage_Tab a.nav-link:first').attr('href');
+	$(link).addClass('show active');
+	console.log(link);
+	console.log($('#comparePage_Tab').html());
+	console.log($('#comparePage_Tab').children().html());
+	console.log($('#comparePage_Tab').children().first().html());
 }
 function show_worldmap(){
 	$("#homePage").hide();
 	$('#detailPage').hide();
+	$('#comparePage').hide();
 	$('#googleMap').hide();
 	$('#googleMap').show(300);
 	$('#googleMap').addClass('v-100');
@@ -75,11 +139,22 @@ function show_worldmap(){
 	addAllMarker();
 }
 $( "#continentList" ).delegate( ".country-card", "click", function() {
-	currentScreen = 'detailPage';
 	selectedCountryID = $(this).attr('country_id');
-	show_country();
-	var stateObj = { selectedCountryID: selectedCountryID, currentScreen: currentScreen };
-	history.pushState(stateObj, "", "index.html");
+	if(compareMode){
+		if(selectedCountries.has(selectedCountryID)){
+			selectedCountries.delete(selectedCountryID);
+			$('>img',this).removeClass('selected');
+		}else{
+			selectedCountries.add(selectedCountryID);
+			$('>img',this).addClass('selected');
+		}
+			
+	}else{
+		currentScreen = 'detailPage';
+		show_country();
+		var stateObj = { selectedCountryID: selectedCountryID, currentScreen: currentScreen };
+		history.pushState(stateObj, "", "index.html");
+	}
 
 	// --------------------------------------------------- //
 	//$('#continentList').hide();
@@ -88,11 +163,15 @@ $( "#continentList" ).delegate( ".country-card", "click", function() {
 function show_home(){
 	$('#homePage').show(300);
 	$('#detailPage').hide();
+	$('#comparePage').hide();
 	$('#googleMap').hide();
+	selectedCountries.clear();
+	$('.country-card >img').removeClass('selected');
 }
 function show_country(){
 	$('#googleMap').removeClass('v-100');
 	$("#homePage").hide();
+	$('#comparePage').hide();
 	$('#detailPage').show(300);
 	$('#googleMap').show(300);
 	var country_id = selectedCountryID;

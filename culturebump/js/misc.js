@@ -19,10 +19,10 @@
     var current = location.pathname.split("/").slice(-1)[0].replace(/^\/|\/$/g, '');
     $('.mdc-drawer-item .mdc-drawer-link', sidebar).each(function() {
       var $this = $(this);
-      console.log(currentScreen);
     })
     $(".mdc-toolbar__menu-icon").on("click", function(){
       $(".body-wrapper .page-wrapper .content-wrapper").toggleClass("drawer-minimized");
+      $("#hamburgerIcon").toggleClass("change");
     });
   });
 })(jQuery);

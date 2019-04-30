@@ -105,12 +105,13 @@ function data_init(data){
 
 
 function view_init(){
+	// countryList
 	var result = "";
 	for( var continent_id in dataContinent){
 		var continent = dataContinent[continent_id];
 		var continent_name = continent.name;
 		result += `<div class="continent">`;
-		result += `<div class="continent-title bg-primary col-12 mb-3">` + continent_name + `</div>`;
+		result += `<div class="bar-title bg-primary col-12 mb-3 text-center">` + continent_name + `</div>`;
 		result += `<div class="country-container col-12 p-5">`;
 		result += `<div class="row">`;
 		for ( var country_id in dataCountry){
@@ -135,9 +136,35 @@ function view_init(){
 		result += `</div> <!-- end continent -->`;
 	}
 	$('#continentList').append(result);
+	// compareList
+	result = '';
+	for (var category_id in dataCategory){
+		var category_name = dataCategory[category_id];
+		result += `<a class="col-3 bg-white nav-item nav-link" data-toggle="tab" href="#compare_`+category_id+`" role="tab" aria-controls="nav-home" aria-selected="true">`+category_name+`</a>`;
+	}
+	$('#comparePage_Tab').html(result);
+
 	$('#compare').change(function() {
-		console.log("hey");
-  })
+		compareMode = $(this).prop('checked');
+		selectedCountries.clear();
+		$('.country-card >img').removeClass('selected');
+		if(compareMode){
+			$('#compareHint').show();
+			$('#submitButton').show();
+		}else{
+			$('#compareHint').hide();
+			$('#submitButton').hide();
+		}
+  });
+  $('#submitButton').click(function(){
+  	if(selectedCountries.size >0 ){
+			currentScreen = 'multiComparePage';
+			var stateObj = { selectedCountries: selectedCountries, currentScreen: currentScreen };
+			history.pushState(stateObj, "", "index.html");
+			
+			show_multiComparePage();
+  	}
+  });
 }
 
 

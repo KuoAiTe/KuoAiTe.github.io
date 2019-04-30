@@ -17917,9 +17917,11 @@ address p {
 .bg-primary{
   background:#F7971D !important;
 }
-.continent-title {
+.bg-blue{
+  background:#0068A9 !important;
+}
+.bar-title {
   padding:10px 10px 10px 20px;
-  text-align: center;
   font-weight: bold;
   color:#FFFFFF;
 }
@@ -17950,14 +17952,39 @@ a{
   width:30px;
 }
 
-
+.country-flag.selected{
+  opacity: 0.4 !important;
+}
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  color:#F7971D;
   border: 0px;
   border-bottom: 1px solid transparent;
   border-color:#F7971D;
 }
-.nav-tabs .nav-link {
-    border: 1px solid transparent;
-    border-top-left-radius: .25rem;
-    border-top-right-radius: .25rem;
+
+.nav-item.nav-link {
+  color:#495057;
+  border: 1px solid transparent;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }

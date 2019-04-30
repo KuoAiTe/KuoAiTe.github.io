@@ -42,7 +42,7 @@
             <div class="mdc-list-item mdc-drawer-item">
               <a id="menu-item-home" class="menu-item mdc-drawer-link text-white">Home</a>
               <a id="menu-item-world" class="menu-item mdc-drawer-link text-white">World Map</a>
-              <a id="menu-item-change" class="menu-item mdc-drawer-link text-white">Change Home Country</a>
+              <!--<a id="menu-item-change" class="menu-item mdc-drawer-link text-white">Change Home Country</a>-->
             </div>
           </nav>
           
@@ -59,7 +59,13 @@
     <header class="mdc-toolbar mdc-elevation--z4 mdc-toolbar--fixed">
       <div class="mdc-toolbar__row">
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-          <a href="javascript:void(0)" class="menu-toggler material-icons mdc-toolbar__menu-icon">menu</a>
+          <a href="javascript:void(0)" class="menu-toggler material-icons mdc-toolbar__menu-icon">
+          	<div id="hamburgerIcon">
+						  <div class="bar1"></div>
+						  <div class="bar2"></div>
+						  <div class="bar3"></div>
+						</div>
+					</a>
           <span class="mdc-toolbar__input">
             <div class="mdc-text-field text-center text-white">
               <h3>CultureBump</h3>
@@ -75,23 +81,29 @@
       	<div class="row">
 	      	<div id="detailPage" class="col-12">
 		      	<nav>
-						  <div id="detailPage_Tab" class="nav nav-tabs" role="tablist">
-						  	<a class="col-3 bg-white nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#detailPage_SelectedCountry" role="tab" aria-controls="nav-home" aria-selected="true"></a>
-								<a class="col-3 bg-white nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#detailPage_HomeCountry" role="tab" aria-controls="nav-home"></a>
-								<a class="col-3 bg-white nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#detailPage_Similarity" role="tab" aria-controls="nav-home">Similarities</a>
-								<a class="col-3 bg-white nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#detailPage_Difference" role="tab" aria-controls="nav-home">Culture Bumps</a>
+						  <div id="detailPage_Tab" class="nav nav-tabs text-center" role="tablist">
+						  	<a class="col-3 bg-white nav-item nav-link active" data-toggle="tab" href="#detailPage_SelectedCountry" role="tab" aria-controls="nav-home" aria-selected="true"></a>
+								<a class="col-3 bg-white nav-item nav-link" data-toggle="tab" href="#detailPage_HomeCountry" role="tab" aria-controls="nav-home"></a>
+								<a class="col-3 bg-white nav-item nav-link" data-toggle="tab" href="#detailPage_Similarity" role="tab" aria-controls="nav-home">Similarities</a>
+								<a class="col-3 bg-white nav-item nav-link" data-toggle="tab" href="#detailPage_Difference" role="tab" aria-controls="nav-home">Culture Bumps</a>
 								
 						  </div>
 						</nav>	
-						<div class="tab-content" id="nav-tabContent">
+						<div id="nav-tabContent" class="tab-content">
 						  <div id="detailPage_SelectedCountry" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-home-tab"></div>
 						  <div id="detailPage_HomeCountry" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
 						  <div id="detailPage_Similarity" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
 						  <div id="detailPage_Difference" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
 						</div>
 	      	</div>
-	      	<div id="homePage">
-		      	<div id="homeCountryDisplay" class="col-12 text-center">
+	      	<div id="comparePage" class="col-12">
+		      	<nav>
+						  <div id="comparePage_Tab" class="nav nav-tabs text-center" role="tablist"></div>
+						</nav>	
+						<div id="compare-tabContent" class="tab-content"></div>
+	      	</div>
+	      	<div id="homePage" class="col-12">
+		      	<div id="homeCountryDisplay" class=" text-center">
 		      		<h2 class="mt-4 mb-3">Home Country</h2>
 		      		<div class="d-flex justify-content-center">
 								<div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1 card country-card">
@@ -102,9 +114,11 @@
 							<div class="p-3 text-left">
 							Multi-Contires Comparison  
 							<input id="compare" type="checkbox" data-toggle="toggle" data-onstyle="warning" data-offstyle="light">
+							<h6 id="compareHint" class="mt-3" style="display:none;">Selecte mutiple countries and press the blue button at the bottom to compare.</h6>
 							</div>
 		      	</div>
-		      	<div id="continentList" class="continent-container col-12"></div>
+		      	<div id="continentList" class="continent-container col-12 p-0"></div>
+		      	<a href="javascript:void(0);"><div id="submitButton" class="continent-title bg-blue col-12" style="display:none;">COMPARE</div></a>
 		      </div>
 	      </div>
       </main>
