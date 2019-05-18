@@ -121,7 +121,7 @@ function view_init(){
 			var country_name = country.name;
 			var resource_name = country_name.toLowerCase().replace(' ','_')
 			if(country_continent_id == continent_id)
-				result += `<div class="col-4 col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-1">
+				result += `<div class="col-6 col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-1">
 										<div class="card country-card" country_id=`+country_id+`>
 											<img class="country-flag card-img-top" src="images/flags/`+resource_name+`.png">
 											<div class="country-body card-body text-center">
