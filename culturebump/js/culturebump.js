@@ -92,7 +92,7 @@ function show_multiComparePage(){
 						var characteristic_description = dataCharacteristic[characteristic_id].characteristic_description;
 						if ( behavior_id == temp_behavior_id){
 							var country_name = dataCountry[country_id].name;
-							var resource_name = country_name.toLowerCase().replace(' ','_');
+							var resource_name = country_name.toLowerCase().replace(' ','_').replace('\'','_');
 							result += `
 									<div class="row pl-4 pr-4">
 										<div class="col-4 col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-1">
