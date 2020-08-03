@@ -1,29 +1,29 @@
 
 function data_init(data){
-	print("data initialization");
-	for ( var i=0; i < data.continent.length; i++){
-		var continent = data.continent[i];
-    var continent_id = continent.continent_id;
-    var continent_name = continent.continent_name;
-    var newContinentData = new Continent(continent_id,continent_name);
-    dataContinent[continent_id] = newContinentData;
-	}
-	print("dataContinent:");
-	print(dataContinent);
-	for (var i=0; i< data.country.length; i++){
-		var country = data.country[i];
-    var country_id = country.country_id;
-    var continent_id = country.continent_id;
-    var country_name = country.country_name;
-    var characteristicList = [];
-    var latitude = parseFloat(country.latitude);
-    var longitude = parseFloat(country.longitude);
-		var resource_name = country_name.toLowerCase().replace(' ','_');
+    print("data initialization");
+    for ( var i=0; i < data.continent.length; i++){
+        var continent = data.continent[i];
+        var continent_id = continent.continent_id;
+        var continent_name = continent.continent_name;
+        var newContinentData = new Continent(continent_id,continent_name);
+        dataContinent[continent_id] = newContinentData;
+    }
+    print("dataContinent:");
+    print(dataContinent);
+    for (var i=0; i< data.country.length; i++){
+        var country = data.country[i];
+		var country_id = country.country_id;
+		var continent_id = country.continent_id;
+		var country_name = country.country_name;
+		var characteristicList = [];
+		var latitude = parseFloat(country.latitude);
+		var longitude = parseFloat(country.longitude);
+		var resource_name = country.resourceName;
 		var icon = {
 			url:'./images/flags/'+resource_name+'.png',
 			scaledSize: new google.maps.Size(25, 25), // scaled size
-    	origin: new google.maps.Point(0,0), // origin
-    	anchor: new google.maps.Point(0, 0) // anchor
+			origin: new google.maps.Point(0,0), // origin
+			anchor: new google.maps.Point(0, 0) // anchor
 		};
 
 		var marker = new google.maps.Marker({ position: {lat: latitude, lng: longitude} ,
@@ -31,14 +31,15 @@ function data_init(data){
 			title: country_name,
 			map: null
 		});
-    var newCountryData = new Country(
-        country_id,
-        continent_id,
-        country_name,
-        new LatLng(latitude, longitude),
-        characteristicList,
-        marker
-    );
+		var newCountryData = new Country(
+			country_id,
+			continent_id,
+			country_name,
+			resource_name,
+			new LatLng(latitude, longitude),
+			characteristicList,
+			marker
+		);
     dataCountry[country_id] = newCountryData;
 	}
 	print("dataCountry:");
