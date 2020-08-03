@@ -120,7 +120,7 @@ function view_init(){
 			var country_continent_id = country.continent_id;
 			var country_id = country.country_id;
 			var country_name = country.name;
-			var resource_name = country_name.toLowerCase().replace(' ','_')
+			var resource_name = country.resource_name
 			if(country_continent_id == continent_id)
 				result += `<div class="col-6 col-xs-4 col-sm-4 col-md-3 col-lg-2 col-xl-1">
 										<div class="card country-card" country_id=`+country_id+`>
