@@ -15,10 +15,11 @@ function Continent(continent_id, name){
 };
 
 
-function Country(country_id, continent_id, name, LatLng, characteristicsList,marker){
+function Country(country_id, continent_id, name, resource_name, LatLng, characteristicsList,marker){
 	this.country_id = country_id;
 	this.continent_id = continent_id;
 	this.name = name;
+	this.resource_name = resource_name;
 	this.LatLng = LatLng;
 	this.characteristicsList = characteristicsList;
 	this.marker = marker;
